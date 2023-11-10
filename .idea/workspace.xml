@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c1f27255-7180-4191-963c-c2b810ffd374" name="Changes" comment="RegisterPage added">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/assets/images/game-icon-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/assets/images/game-icon-transparent.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GameRoast.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/input-form/input-form.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/input-form/input-form.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/login-page/login-page.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/login-page/login-page.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/login-page/login-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/login-page/login-page.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/register-page/register-page.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/register-page/register-page.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/register-page/register-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/register-page/register-page.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/assets/images/Logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/assets/images/LogoTransparent.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/styles.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;kniet&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="74dc379c-930e-4745-90f2-b040cc929bfb" />
+        <option name="url" value="https://github.com/kniet/GameRoast.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2XnRJgJtpz9i2ylf7xJBS3wnFjz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.github.iguissouma.nxconsole.dontShowDeprecationNoticeAgain&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;database.data.views.appearance&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.2.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kniet\Desktop\Nauka\IntelliJProjects\GameRoast\client\GameRoastFrontend\src\assets\images" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.Angular CLI Run">
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Angular CLI Run" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/client/GameRoastFrontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c1f27255-7180-4191-963c-c2b810ffd374" name="Changes" comment="" />
+      <created>1699256319857</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699256319857</updated>
+      <workItem from="1699262788838" duration="1499000" />
+      <workItem from="1699284210396" duration="117000" />
+      <workItem from="1699465542669" duration="455000" />
+      <workItem from="1699479670701" duration="40000" />
+      <workItem from="1699608610225" duration="12152000" />
+      <workItem from="1699621404542" duration="49000" />
+    </task>
+    <task id="LOCAL-00001" summary="Login-page added">
+      <option name="closed" value="true" />
+      <created>1699263774719</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699263774719</updated>
+    </task>
+    <task id="LOCAL-00002" summary="gitignore configuration">
+      <option name="closed" value="true" />
+      <created>1699263911043</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1699263911043</updated>
+    </task>
+    <task id="LOCAL-00003" summary="RegisterPage added">
+      <option name="closed" value="true" />
+      <created>1699609760183</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1699609760183</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Login-page added" />
+    <MESSAGE value="gitignore configuration" />
+    <MESSAGE value="RegisterPage added" />
+    <option name="LAST_COMMIT_MESSAGE" value="RegisterPage added" />
+  </component>
+</project>

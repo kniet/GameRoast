@@ -13,7 +13,7 @@
 }
 
 .headText {
-  color: #333;
+  color: #007AFF;
   font-size: 39px;
   font-weight: 600;
   padding-bottom: 20px;
@@ -34,12 +34,12 @@ img {
 
 .loginButton {
   border-radius: 25px;
-  background: #1d12fc;
-  box-shadow: 0px 4px 4px 0px rgba(29, 18, 252, 0.25);
+  background: #FF5088;
+  box-shadow: 0px 4px 4px 0px #CE55A1;
   height: 50px;
   border: none;
   cursor: pointer;
-  margin: 20px 0 20px 0;
+  margin: 50px 0 20px 0;
   color: #fff;
   font-size: 16px;
   font-style: normal;
@@ -52,6 +52,7 @@ img {
   justify-content: space-between;
   padding: 0 25px 0 25px;
   font-size: 12px;
+  color: #1c12fd;
 }
 
 @media only screen and (max-width: 1280px) {

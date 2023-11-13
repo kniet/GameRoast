@@ -4,27 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1f27255-7180-4191-963c-c2b810ffd374" name="Changes" comment="RegisterPage added">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/assets/images/game-icon-full.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/assets/images/game-icon-transparent.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameRoast.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/input-form/input-form.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/input-form/input-form.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/login-page/login-page.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/login-page/login-page.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/login-page/login-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/login-page/login-page.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/register-page/register-page.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/register-page/register-page.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/register-page/register-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/register-page/register-page.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/assets/images/Logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/assets/images/LogoTransparent.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/styles.css" afterDir="false" />
+    <list default="true" id="c1f27255-7180-4191-963c-c2b810ffd374" name="Changes" comment="Header added">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/header/header.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/header/header.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/header/header.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,25 +46,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.github.iguissouma.nxconsole.dontShowDeprecationNoticeAgain&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;database.data.views.appearance&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2023.2.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.github.iguissouma.nxconsole.dontShowDeprecationNoticeAgain": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "database.data.views.appearance",
+    "ts.external.directory.path": "C:\\Users\\kniet\\Desktop\\Nauka\\IntelliJProjects\\GameRoast\\client\\GameRoastFrontend\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\kniet\Desktop\Nauka\IntelliJProjects\GameRoast\client\GameRoastFrontend\src\assets\images" />
@@ -126,6 +110,8 @@
       <workItem from="1699479670701" duration="40000" />
       <workItem from="1699608610225" duration="12152000" />
       <workItem from="1699621404542" duration="49000" />
+      <workItem from="1699621463691" duration="167000" />
+      <workItem from="1699858963919" duration="2645000" />
     </task>
     <task id="LOCAL-00001" summary="Login-page added">
       <option name="closed" value="true" />
@@ -151,7 +137,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699609760183</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Header added">
+      <option name="closed" value="true" />
+      <created>1699621608346</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699621608346</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +166,7 @@
     <MESSAGE value="Login-page added" />
     <MESSAGE value="gitignore configuration" />
     <MESSAGE value="RegisterPage added" />
-    <option name="LAST_COMMIT_MESSAGE" value="RegisterPage added" />
+    <MESSAGE value="Header added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Header added" />
   </component>
 </project>

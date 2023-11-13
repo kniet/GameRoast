@@ -28,7 +28,7 @@ img {
 }
 
 .roast {
-  color: #FFD354;
+  color: #1c12fd;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -56,6 +56,27 @@ img {
   color: #c2b23a;
 }
 
+.header .headerPlatforms li a {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.headerPlatforms {
+  display: flex;
+  padding-right: 60px;
+}
+
+.header .headerPlatforms li a,
+.header .headerPlatforms li a:link,
+.header .headerPlatforms li a:visited,
+.header .headerPlatforms li a:active,
+.header .headerPlatforms li a:hover {
+  color: #FFFFFF;
+  text-decoration:none;
+}
+
 .header form {
   display: flex;
   height: 40px;
@@ -81,7 +102,7 @@ img {
   padding: 0 15px;
   color: #fff;
   font-size: 17px;
-  background: #2E4756;
+  background: #c2b23a;
   border: none;
   border-radius: 2px;
   cursor: pointer;
@@ -109,13 +130,13 @@ img {
   display: none;
 }
 
-@media (max-width: 1245px) {
+@media (max-width: 1270px) {
   .header {
     padding: 0 50px;
   }
 }
 
-@media (max-width: 1140px) {
+@media (max-width: 1340px) {
   .header {
     padding: 0px;
   }
@@ -138,6 +159,11 @@ img {
     background: #14181f;
     display: inline-block;
     transition: left 0.3s ease;
+  }
+  .headerPlatforms {
+    display: inline-block;
+    padding-right: 0px;
+
   }
   .header .header-items.active {
     left: 0px;
@@ -201,6 +227,35 @@ img {
   .header .cancel-icon.show {
     display: block;
   }
+  .title {
+    font-size: 18px;
+  }
+  .genre {
+    font-size: 13px;
+  }
+  .releaseDate {
+    font-size: 11px;
+
+  }
+  .description {
+    font-size: 13px;
+  }
+  .footerData {
+    font-size: 16px;
+  }
+  .footerLogo img {
+    height: 70px;
+    width: 70px;
+  }
+  .rights {
+    font-size: 12px;
+  }
+  .platform {
+    padding: 0 20px;
+  }
+  .separator {
+    border-left: 1px solid #FFFFFF;
+  }
 }
 
 @media (max-width: 600px) {
@@ -229,6 +284,37 @@ img {
   .header .header-items li a {
     font-size: 11px;
   }
+  .mainBackground {
+    width: 65%;
+  }
+  .dataElement {
+    max-width: 250px;
+  }
+  .title {
+    font-size: 15px;
+  }
+  .genre {
+    font-size: 11px;
+  }
+  .releaseDate {
+    font-size: 10px;
+  }
+  .description {
+    font-size: 11px;
+  }
+  .footerData {
+    font-size: 14px;
+  }
+  .footerLogo img {
+    height: 60px;
+    width: 60px;
+  }
+  .rights {
+    font-size: 10px;
+  }
+  .platform {
+    padding: 0 15px;
+  }
 }
 
 @media (max-width: 450px) {
@@ -239,3 +325,4 @@ img {
     padding: 0px 10px;
   }
 }
+

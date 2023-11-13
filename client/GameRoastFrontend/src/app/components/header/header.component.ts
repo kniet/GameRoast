@@ -8,6 +8,7 @@ import {Component, ElementRef, ViewChild} from '@angular/core';
 export class HeaderComponent {
   private scrollTop: number;
   private scrollLeft: number;
+  isAdmin: boolean | null = null;
   @ViewChild("search") search!: ElementRef;
   @ViewChild("hamburger") hamburger!: ElementRef;
   @ViewChild("cancel") cancel!: ElementRef;
@@ -19,6 +20,7 @@ export class HeaderComponent {
         this.hamburger.nativeElement.classList.add("hide");
         this.search.nativeElement.classList.add("hide");
         this.cancel.nativeElement.classList.add("show");
+        this.form.nativeElement.classList.remove("active");
         this.disableScroll();
       });
 

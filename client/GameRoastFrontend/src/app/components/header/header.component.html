@@ -25,6 +25,18 @@
     </button>
   </form>
   <div #items class="header-items">
+    <ng-container>
+      <div *ngIf="isAdmin == true" class="headerPlatforms">
+        <li><a href="#" class="headerPlatform">Add game</a></li>
+      </div>
+    </ng-container>
+    <ng-container>
+    <div *ngIf="isAdmin == false" class="headerPlatforms">
+      <li><a href="#" class="headerPlatform">PS5</a></li>
+      <li><a href="#" class="headerPlatform">PC</a></li>
+      <li><a href="#" class="headerPlatform">XSX</a></li>
+    </div>
+    </ng-container>
     <li><a href="#">Log in</a></li>
   </div>
 </div>

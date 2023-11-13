@@ -8,7 +8,7 @@ import {Component, ElementRef, ViewChild} from '@angular/core';
 export class HeaderComponent {
   private scrollTop: number;
   private scrollLeft: number;
-  isAdmin: boolean | null = false;
+  isAdmin: boolean | null = null;
   @ViewChild("search") search!: ElementRef;
   @ViewChild("hamburger") hamburger!: ElementRef;
   @ViewChild("cancel") cancel!: ElementRef;

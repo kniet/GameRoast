@@ -1,0 +1,133 @@
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.game {
+  max-width: 320px;
+  background: #eaeaea;
+  margin: 30px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px 0px #6c3;
+}
+
+.image {
+  border-radius: 10px;
+}
+
+.image img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.information {
+  padding: 15px;
+}
+
+.title {
+  color: #ff31ac;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.genreReleaseDate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.genreDiv {
+  padding: 12px 0 10px 0;
+}
+
+.genre {
+  color: #2113fba6;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.releaseDate {
+  color: #2113fba6;
+  font-size: 13px;
+  margin-top: 3px;
+  font-weight: 600;
+}
+
+.scoreBack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #6c3;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.score {
+  color: white;
+  font-size: 13px;
+}
+
+.description {
+  color: #000;
+  font-size: 15px;
+  text-align: justify;
+}
+
+@media (max-width: 1140px) {
+  .title {
+    font-size: 18px;
+  }
+  .genre {
+    font-size: 13px;
+  }
+  .scoreBack {
+    width: 23px;
+    height: 23px;
+  }
+  .score {
+    font-size: 11px;
+  }
+  .releaseDate {
+    font-size: 11px;
+  }
+  .description {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 600px) {
+  .mainBackground {
+    width: 65%;
+  }
+  .dataElement {
+    max-width: 250px;
+  }
+  .title {
+    font-size: 15px;
+  }
+  .genre {
+    font-size: 11px;
+    padding-right: 5px;
+  }
+  .releaseDate {
+    font-size: 10px;
+  }
+  .scoreBack {
+    width: 20px;
+    height: 20px;
+  }
+  .score {
+    font-size: 10px;
+  }
+  .description {
+    font-size: 11px;
+  }
+}
+

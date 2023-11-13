@@ -1,0 +1,24 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+  min-height: 80vh;
+  flex-direction: column;
+}
+
+.mainBackground {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #fafafa;
+  width: 80%;
+}
+
+@media (max-width: 600px) {
+  .mainBackground {
+    width: 65%;
+  }
+}

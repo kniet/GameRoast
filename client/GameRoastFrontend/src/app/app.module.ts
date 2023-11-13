@@ -9,6 +9,7 @@ import { RegisterPageComponent } from './pages/register-page/register-page.compo
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { GameCardComponent } from './components/game-card/game-card.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginPageComponent },
@@ -26,6 +27,7 @@ const routes: Routes = [
     HomePageComponent,
     HeaderComponent,
     FooterComponent,
+    GameCardComponent,
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(routes)

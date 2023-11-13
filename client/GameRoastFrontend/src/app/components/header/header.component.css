@@ -1,5 +1,5 @@
 .header {
-  background: #000;
+  background-color: #121212;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -28,7 +28,7 @@ img {
 }
 
 .roast {
-  color: #1c12fd;
+  color: #FFD354;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -102,7 +102,7 @@ img {
   padding: 0 15px;
   color: #fff;
   font-size: 17px;
-  background: #c2b23a;
+  background: #2E4756;
   border: none;
   border-radius: 2px;
   cursor: pointer;
@@ -227,35 +227,6 @@ img {
   .header .cancel-icon.show {
     display: block;
   }
-  .title {
-    font-size: 18px;
-  }
-  .genre {
-    font-size: 13px;
-  }
-  .releaseDate {
-    font-size: 11px;
-
-  }
-  .description {
-    font-size: 13px;
-  }
-  .footerData {
-    font-size: 16px;
-  }
-  .footerLogo img {
-    height: 70px;
-    width: 70px;
-  }
-  .rights {
-    font-size: 12px;
-  }
-  .platform {
-    padding: 0 20px;
-  }
-  .separator {
-    border-left: 1px solid #FFFFFF;
-  }
 }
 
 @media (max-width: 600px) {
@@ -283,37 +254,6 @@ img {
   }
   .header .header-items li a {
     font-size: 11px;
-  }
-  .mainBackground {
-    width: 65%;
-  }
-  .dataElement {
-    max-width: 250px;
-  }
-  .title {
-    font-size: 15px;
-  }
-  .genre {
-    font-size: 11px;
-  }
-  .releaseDate {
-    font-size: 10px;
-  }
-  .description {
-    font-size: 11px;
-  }
-  .footerData {
-    font-size: 14px;
-  }
-  .footerLogo img {
-    height: 60px;
-    width: 60px;
-  }
-  .rights {
-    font-size: 10px;
-  }
-  .platform {
-    padding: 0 15px;
   }
 }
 

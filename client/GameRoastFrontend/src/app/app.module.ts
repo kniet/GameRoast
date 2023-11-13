@@ -8,6 +8,7 @@ import { InputFormComponent } from './components/input-form/input-form.component
 import { RegisterPageComponent } from './pages/register-page/register-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginPageComponent },
@@ -24,6 +25,7 @@ const routes: Routes = [
     RegisterPageComponent,
     HomePageComponent,
     HeaderComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(routes)

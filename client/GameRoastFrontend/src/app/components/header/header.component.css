@@ -74,7 +74,7 @@ img {
 .header .headerPlatforms li a:active,
 .header .headerPlatforms li a:hover {
   color: #FFFFFF;
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .header form {
@@ -140,13 +140,16 @@ img {
   .header {
     padding: 0px;
   }
+
   .header .logo {
     text-align: center;
   }
+
   .logo img {
     height: 100px;
     width: 100px;
   }
+
   .header .header-items {
     position: fixed;
     z-index: 99;
@@ -160,22 +163,27 @@ img {
     display: inline-block;
     transition: left 0.3s ease;
   }
+
   .headerPlatforms {
     display: inline-block;
     padding-right: 0px;
 
   }
+
   .header .header-items.active {
     left: 0px;
   }
+
   .header .header-items li {
     line-height: 40px;
     margin: 20px 0;
   }
+
   .header .header-items li a {
     font-size: 20px;
     padding-top: 20px 0px;
   }
+
   .header form {
     position: absolute;
     top: 80px;
@@ -184,11 +192,13 @@ img {
     pointer-events: none;
     transition: top 0.3s ease, opacity 0.1s ease;
   }
+
   .header form.active {
     top: 95px;
     opacity: 1;
     pointer-events: auto;
   }
+
   .header form:before {
     position: absolute;
     content: "";
@@ -201,6 +211,7 @@ img {
     border-bottom-color: #1e232b;
     margin: -20px 0 0;
   }
+
   .header form:after {
     position: absolute;
     content: "";
@@ -213,17 +224,21 @@ img {
     top: 50%;
     transform: translate(-50%, -50%);
   }
+
   .header .menu-icon {
     display: block;
   }
+
   .header .search-icon,
   .header .menu-icon span {
     display: block;
   }
+
   .header .menu-icon span.hide,
   .header .search-icon.hide {
     display: none;
   }
+
   .header .cancel-icon.show {
     display: block;
   }
@@ -236,22 +251,28 @@ img {
     margin: 0px;
     padding: 0px 50px;
   }
+
   .header form {
     right: 30px;
   }
+
   .game {
     font-size: 15px;
   }
+
   .roast {
     font-size: 15px;
   }
+
   .logo img {
     height: 50px;
     width: 50px;
   }
+
   .header .header-items {
     top: 59px;
   }
+
   .header .header-items li a {
     font-size: 11px;
   }

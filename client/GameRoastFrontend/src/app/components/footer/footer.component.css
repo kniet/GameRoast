@@ -30,7 +30,7 @@
 .platforms a:active,
 .platforms a:hover {
   color: #FFFFFF;
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .platforms {
@@ -60,16 +60,20 @@
   .footerData {
     font-size: 16px;
   }
+
   .footerLogo img {
     height: 70px;
     width: 70px;
   }
+
   .rights {
     font-size: 12px;
   }
+
   .platform {
     padding: 0 20px;
   }
+
   .separator {
     border-left: 1px solid #FFFFFF;
   }
@@ -79,13 +83,16 @@
   .footerData {
     font-size: 14px;
   }
+
   .footerLogo img {
     height: 60px;
     width: 60px;
   }
+
   .rights {
     font-size: 10px;
   }
+
   .platform {
     padding: 0 15px;
   }

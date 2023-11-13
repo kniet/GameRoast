@@ -60,13 +60,13 @@ a {
 }
 
 .scoreBack {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #6c3;
-    width: 30px;
-    height: 30px;
-    border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #6c3;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
 }
 
 .score {
@@ -84,19 +84,24 @@ a {
   .title {
     font-size: 18px;
   }
+
   .genre {
     font-size: 13px;
   }
+
   .scoreBack {
     width: 23px;
     height: 23px;
   }
+
   .score {
     font-size: 11px;
   }
+
   .releaseDate {
     font-size: 11px;
   }
+
   .description {
     font-size: 13px;
   }
@@ -106,26 +111,33 @@ a {
   .mainBackground {
     width: 65%;
   }
+
   .dataElement {
     max-width: 250px;
   }
+
   .title {
     font-size: 15px;
   }
+
   .genre {
     font-size: 11px;
     padding-right: 5px;
   }
+
   .releaseDate {
     font-size: 10px;
   }
+
   .scoreBack {
     width: 20px;
     height: 20px;
   }
+
   .score {
     font-size: 10px;
   }
+
   .description {
     font-size: 11px;
   }

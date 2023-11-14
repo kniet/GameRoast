@@ -28,20 +28,15 @@ export class ScoreSquareComponent {
     const g = Math.round(startColor.g + t * (endColor.g - startColor.g));
     const b = Math.round(startColor.b + t * (endColor.b - startColor.b));
 
-    return this.rgbToHex(r, g, b);
+    return `rgb(${r}, ${g}, ${b})`;
   }
 
   private hexToRgb(hex: string) {
-    const bigint = parseInt(hex.slice(1), 16);
-    const r = (bigint >> 16) & 255;
-    const g = (bigint >> 8) & 255;
-    const b = bigint & 255;
+    const r = parseInt(hex.slice(1, 3), 16);
+    const g = parseInt(hex.slice(3, 5), 16);
+    const b = parseInt(hex.slice(5, 7), 16);
 
     return { r, g, b };
-  }
-
-  private rgbToHex(r: number, g: number, b: number) {
-    return `#${(1 << 24 | r << 16 | g << 8 | b).toString(16).slice(1)}`;
   }
 }
 

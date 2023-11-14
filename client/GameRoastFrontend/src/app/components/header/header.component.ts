@@ -1,4 +1,5 @@
 import {Component, ElementRef, ViewChild} from '@angular/core';
+import {AppConstants} from "../../app-constants";
 
 @Component({
   selector: 'app-header',
@@ -6,9 +7,9 @@ import {Component, ElementRef, ViewChild} from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  protected readonly AppConstants = AppConstants;
   private scrollTop: number;
   private scrollLeft: number;
-  isAdmin: boolean | null = null;
   @ViewChild("search") search!: ElementRef;
   @ViewChild("hamburger") hamburger!: ElementRef;
   @ViewChild("cancel") cancel!: ElementRef;

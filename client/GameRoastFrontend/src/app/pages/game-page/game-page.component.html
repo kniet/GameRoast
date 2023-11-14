@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selected game</title>
+</head>
+<body>
+<app-header></app-header>
+<div class="main">
+  <div class="mainBackground">
+    <div class="topData">
+      <div class="tileAndDescription">
+        <div class="title">Game Title</div>
+        <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget ante rutrum,
+          auctor lectus at, scelerisque felis. Cras dignissim est nec mollis pulvinar.
+          Fusce congue at est ac condimentum. Maecenas vulputate non tortor a pharetra.
+          Praesent pellentesque, ipsum a lacinia tempus, dui eros pharetra odio, fringilla pellentesque tortor tortor et
+          quam.
+          Praesent quis magna vitae dolor placerat mollis. Maecenas sit amet egestas diam. Nullam vestibulum hendrerit
+          odio,
+          in sagittis nulla hendrerit nec. Praesent convallis auctor tempus. Sed sit amet aliquet mi, non fringilla
+          nisi.
+          Sed maximus, dolor suscipit aliquam sodales, sem odio suscipit nisl, sed accumsan lectus urna non ligula.
+          Etiam vel justo a nisl lobortis posuere in vel lacus. Cras porttitor metus dolor. Nullam luctus, mauris vitae
+          lacinia consectetur, arcu tortor rhoncus nisi, vel consequat lorem velit id nibh.
+        </div>
+      </div>
+      <div class="ratingAndGameType">
+        <div class="rating">
+          <app-score-square></app-score-square>
+          <ng-container>
+            <div *ngIf="AppConstants.isAdmin == null" class="scoreButtonNull">
+              <button>Log in to score this game!</button>
+            </div>
+          </ng-container>
+          <ng-container>
+            <div *ngIf="AppConstants.isAdmin == true" class="scoreButtonAdmin">
+              <button class="update">Update</button>
+              <button class="delete">Delete</button>
+            </div>
+          </ng-container>
+          <ng-container>
+            <div *ngIf="AppConstants.isAdmin == false" class="scoreButtonUser">
+              <button>Score the game</button>
+            </div>
+          </ng-container>
+        </div>
+        <div class="gameType">
+          <ul class="gameInfoList">
+            <li>Developer: BLA BLA</li>
+            <li>Genre(s): BLA BLA</li>
+            <li>Release date: BLA BLA</li>
+            <li>Platforms: PC PS5 XSX</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="userRatings">
+      <div class="userReviewsHeader">User reviews</div>
+      <ng-container>
+        <div *ngIf="AppConstants.isAdmin == false" class="scoreButtonUser">
+          <button>Score the game</button>
+        </div>
+      </ng-container>
+      <app-comment></app-comment>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
+</body>
+</html>

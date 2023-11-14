@@ -1,0 +1,28 @@
+.ratingSquare {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: #6c3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+}
+
+.gameScoreRating {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .ratingSquare {
+    min-width: 35px;
+    width: 35px;
+    height: 35px;
+  }
+
+  .gameScoreRating {
+    font-size: 14px;
+  }
+}

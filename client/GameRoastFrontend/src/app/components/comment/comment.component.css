@@ -1,0 +1,105 @@
+.comment {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.xpp {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.restOfComment {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.dateAndX {
+  display: flex;
+  align-items: center;
+}
+
+.X button {
+  cursor: pointer;
+  border: none;
+  background: white;
+  margin-left: 10px;
+  padding-top: -20px;
+}
+
+.nickname {
+  font-weight: 600;
+  padding-right: 10px;
+}
+
+.date {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.commentText {
+  font-size: 15px;
+  font-weight: 400;
+  text-align: justify;
+}
+
+@media (max-width: 1340px) {
+  .comment {
+    padding: 15px;
+  }
+
+  .restOfComment {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+  }
+
+  .nickname {
+    font-size: 13px;
+  }
+
+  .date {
+    font-size: 12px;
+  }
+
+  .commentText {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 600px) {
+  .comment {
+    padding: 15px;
+  }
+
+  .restOfComment {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+  }
+
+  .dateAndX {
+    flex-direction: column;
+  }
+
+  .X button {
+    margin: 0;
+  }
+
+  .nickname {
+    font-size: 11px;
+  }
+
+  .date {
+    font-size: 10px;
+  }
+
+  .commentText {
+    font-size: 11px;
+  }
+}

@@ -4,32 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1f27255-7180-4191-963c-c2b810ffd374" name="Changes" comment="Home page added">
+    <list default="true" id="c1f27255-7180-4191-963c-c2b810ffd374" name="Changes" comment="File reformation">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/app-constants.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/app.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/app.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/footer/footer.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/footer/footer.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/footer/footer.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/footer/footer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/footer/footer.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/game-card/game-card.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/game-card/game-card.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/game-card/game-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/game-card/game-card.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/header/header.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/header/header.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/header/header.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/header/header.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/input-form/input-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/input-form/input-form.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/home-page/home-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/home-page/home-page.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/login-page/login-page.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/login-page/login-page.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/login-page/login-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/login-page/login-page.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/register-page/register-page.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/register-page/register-page.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/register-page/register-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/register-page/register-page.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -62,25 +56,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.github.iguissouma.nxconsole.dontShowDeprecationNoticeAgain&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;database.data.views.appearance&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\kniet\\Desktop\\Nauka\\IntelliJProjects\\GameRoast\\client\\GameRoastFrontend\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.github.iguissouma.nxconsole.dontShowDeprecationNoticeAgain": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "database.data.views.appearance",
+    "ts.external.directory.path": "C:\\Users\\kniet\\Desktop\\Nauka\\IntelliJProjects\\GameRoast\\client\\GameRoastFrontend\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\kniet\Desktop\Nauka\IntelliJProjects\GameRoast\client\GameRoastFrontend\src\assets\images" />
@@ -130,7 +125,8 @@
       <workItem from="1699858963919" duration="3460000" />
       <workItem from="1699862531910" duration="296000" />
       <workItem from="1699862898869" duration="5834000" />
-      <workItem from="1699872827931" duration="264000" />
+      <workItem from="1699872827931" duration="323000" />
+      <workItem from="1699946175408" duration="13912000" />
     </task>
     <task id="LOCAL-00001" summary="Login-page added">
       <option name="closed" value="true" />
@@ -196,7 +192,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699868519332</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="File reformation">
+      <option name="closed" value="true" />
+      <created>1699873145079</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1699873145079</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,6 +226,7 @@
     <MESSAGE value="Footer added" />
     <MESSAGE value="Footer added fix" />
     <MESSAGE value="Home page added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Home page added" />
+    <MESSAGE value="File reformation" />
+    <option name="LAST_COMMIT_MESSAGE" value="File reformation" />
   </component>
 </project>

@@ -1,0 +1,37 @@
+.square {
+  width: 125px;
+  height: 125px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.gameScore {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+@media (max-width: 1340px) {
+  .square {
+    width: 85px;
+    height: 85px;
+    font-size: 11px;
+  }
+  .gameScore {
+    font-size: 29px;
+  }
+}
+
+@media (max-width: 600px) {
+  .square {
+    width: 55px;
+    height: 55px;
+  }
+  .gameScore {
+    font-size: 23px;
+  }
+}

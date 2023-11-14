@@ -10,11 +10,16 @@ import {HomePageComponent} from './pages/home-page/home-page.component';
 import {HeaderComponent} from './components/header/header.component';
 import {FooterComponent} from './components/footer/footer.component';
 import {GameCardComponent} from './components/game-card/game-card.component';
+import { GamePageComponent } from './pages/game-page/game-page.component';
+import { ScoreSquareComponent } from './components/score-square/score-square.component';
+import { CommentComponent } from './components/comment/comment.component';
+import { ScoreSquareCommentComponent } from './components/score-square-comment/score-square-comment.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginPageComponent },
   { path: 'register', component: RegisterPageComponent },
   { path: 'home', component: HomePageComponent },
+  { path: 'game', component: GamePageComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full'}
 ]
 
@@ -28,6 +33,10 @@ const routes: Routes = [
     HeaderComponent,
     FooterComponent,
     GameCardComponent,
+    GamePageComponent,
+    ScoreSquareComponent,
+    CommentComponent,
+    ScoreSquareCommentComponent,
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(routes)

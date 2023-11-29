@@ -17,6 +17,7 @@ img {
   align-items: center;
   justify-content: space-around;
   padding: 5px;
+  text-decoration: none;
 }
 
 .game {
@@ -130,7 +131,7 @@ img {
   display: none;
 }
 
-input:focus{
+input:focus {
   outline: none;
 
 }

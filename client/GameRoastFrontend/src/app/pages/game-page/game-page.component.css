@@ -62,6 +62,10 @@
   background: #ffe842;
 }
 
+.scoreButtonNull button:hover {
+  background: #dac737;
+}
+
 .scoreButtonAdmin {
   display: flex;
   flex-direction: row;
@@ -85,13 +89,25 @@
   margin-bottom: 20px;
 }
 
+.scoreButtonUser button:hover {
+  background: #dac737;
+}
+
 .update {
   margin-right: 6px;
   background: #ffe842;
 }
 
+.update:hover {
+  background: #dac737;
+}
+
 .delete {
   background: #FF31AC;
+}
+
+.delete:hover {
+  background: #c02484;
 }
 
 .gameInfoList {
@@ -129,6 +145,7 @@
 
   .ratingAndGameType {
     padding: 0 0 10px 60px;
+    justify-content: center;
   }
 
   .title {
@@ -182,7 +199,6 @@
 
   .ratingAndGameType {
     flex-direction: column;
-    align-items: center;
     padding: 0 30px 20px;
   }
 

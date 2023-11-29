@@ -1,0 +1,170 @@
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 100%;
+  min-height: 80vh;
+  flex-direction: column;
+}
+
+.mainBackground {
+  background: #fafafa;
+  width: 70%;
+}
+
+.title {
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 45px;
+}
+
+.allInputs {
+  display: flex;
+  justify-content: center;
+}
+
+.column {
+  padding: 0 40px 25px 50px;
+}
+
+.labelInput {
+  padding: 0 0 25px 0;
+}
+
+.text {
+  font-size: 16px;
+}
+
+.biggerInput {
+  width: 100%;
+  max-height: 200px;
+  height: 100px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  resize: vertical;
+  font-size: 14px;
+}
+
+.custom-file-input {
+  color: transparent;
+}
+
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.custom-file-input::before {
+  content: "Select file";
+  color: black;
+  display: inline-block;
+  background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 1px solid #999;
+  border-radius: 3px;
+  padding: 1px 6px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.custom-file-input:hover::before {
+  border-color: black;
+}
+
+.custom-file-input:active {
+  outline: 0;
+}
+
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+label[for="fileUpload"] {
+  font-size: 14px;
+  padding-right: 5px;
+}
+
+.genre {
+  padding: 0 0 25px 0;
+}
+
+.radios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1340px) {
+  .title {
+    font-size: 20px;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+
+  label {
+    font-size: 12px;
+  }
+
+  label[for="fileUpload"] {
+    font-size: 12px;
+  }
+
+  .biggerInput {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .allInputs {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 16px;
+    padding: 30px;
+  }
+
+  .column {
+    padding: 0 25px 25px;
+  }
+
+  .text {
+    font-size: 13px;
+  }
+
+  label {
+    font-size: 11px;
+  }
+
+  label[for="fileUpload"] {
+    font-size: 11px;
+  }
+
+  .radios {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .custom-file-input {
+    width: 100%;
+  }
+
+  .custom-file-input::before {
+    font-size: 10px;
+  }
+
+  .biggerInput {
+    font-size: 11px;
+  }
+}

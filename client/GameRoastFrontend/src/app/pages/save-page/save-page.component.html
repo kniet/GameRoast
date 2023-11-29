@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Save the game</title>
+</head>
+<body>
+<app-header></app-header>
+<div class="main">
+  <div class="mainBackground">
+    <div class="title">Add/Update game panel</div>
+    <div class="allInputs">
+      <div class="column">
+        <app-label-input description="Title" id="title" type="text"></app-label-input>
+        <div class="labelInput">
+          <div class="text">Description</div>
+          <textarea class="biggerInput" type="text"></textarea>
+        </div>
+        <app-label-input description="Release date" id="releaseDate" type="date"></app-label-input>
+        <div class="text">Game picture</div>
+        <label for="fileUpload">Select a file:</label>
+        <input class="custom-file-input" type="file" id="fileUpload"/>
+      </div>
+      <div class="column">
+        <app-label-input description="Developer" id="developer" type="text"></app-label-input>
+        <div class="genre">
+          <div class="text">Genre</div>
+          <div class="radios">
+            <app-radio-item id="action" description="Action"></app-radio-item>
+            <app-radio-item id="rpg" description="RPG"></app-radio-item>
+            <app-radio-item id="sports" description="Sports"></app-radio-item>
+            <app-radio-item id="adventure" description="Adventure"></app-radio-item>
+            <app-radio-item id="simulation" description="Simulation"></app-radio-item>
+            <app-radio-item id="mmo" description="MMO"></app-radio-item>
+            <app-radio-item id="puzzle" description="Puzzle"></app-radio-item>
+            <app-radio-item id="strategy" description="Strategy"></app-radio-item>
+            <app-radio-item id="fps" description="FPS"></app-radio-item>
+          </div>
+        </div>
+        <div class="checks">
+          <div class="text">Platform</div>
+          <app-checkbox-label id="pc" description="PC"></app-checkbox-label>
+          <app-checkbox-label id="ps5" description="PS5"></app-checkbox-label>
+          <app-checkbox-label id="xsx" description="XSX"></app-checkbox-label>
+        </div>
+      </div>
+    </div>
+    <app-control-buttons></app-control-buttons>
+  </div>
+</div>
+<app-footer></app-footer>
+</body>
+</html>

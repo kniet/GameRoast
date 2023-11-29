@@ -1,9 +1,10 @@
 .main {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   height: 100%;
-  min-height: 70vh;
+  min-height: 80vh;
   flex-direction: column;
 }
 
@@ -118,7 +119,7 @@ input[type="range"]:focus::-moz-range-thumb {
   padding: 50px 100px;
 }
 
-.comment textarea {
+.userInput {
   width: 100%;
   resize: vertical;
   padding: 15px;
@@ -126,6 +127,8 @@ input[type="range"]:focus::-moz-range-thumb {
   border: 0;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.06);
   height: 150px;
+  font-size: 14px;
+  max-height: 300px;
 }
 
 .submit {
@@ -151,10 +154,6 @@ input[type="range"]:focus::-moz-range-thumb {
 
 /* RESPONSIVE */
 @media (max-width: 1340px) {
-  .main {
-    min-height: 70vh;
-  }
-
   .title {
     font-size: 20px;
   }
@@ -176,13 +175,13 @@ input[type="range"]:focus::-moz-range-thumb {
   .scoreSquareText {
     font-size: 30px;
   }
+
+  .userInput {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 600px) {
-  .main {
-    min-height: 80vh;
-  }
-
   .title {
     font-size: 16px;
     padding: 30px 0 30px 40px;
@@ -231,5 +230,9 @@ input[type="range"]:focus::-moz-range-thumb {
 
   .comment {
     padding: 50px 50px;
+  }
+
+  .userInput {
+    font-size: 11px;
   }
 }

@@ -7,7 +7,8 @@ import {AppConstants} from "../../app-constants";
   styleUrls: ['./score-square.component.css']
 })
 export class ScoreSquareComponent {
-  constructor(private scoreColor: ScoreColorService) {}
+  constructor(private scoreColor: ScoreColorService) {
+  }
 
   getScoreColor(): string {
     return this.scoreColor.interpolateColor(AppConstants.gameScore);

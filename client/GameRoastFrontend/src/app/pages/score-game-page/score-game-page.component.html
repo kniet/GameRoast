@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Score the game</title>
+</head>
+<body>
+<app-header></app-header>
+<div class="main">
+  <div class="mainBackground">
+    <div class="title">Game Title</div>
+    <div class="scores">
+      <div class="overallScore">
+        <div class="scoreType">Overall score</div>
+        <app-score-square></app-score-square>
+      </div>
+      <div class="yoursScore">
+        <div class="scoreType">Yours score</div>
+        <div class="scoreAndRangeInput">
+          <app-score-square-input-range [inputRangeValue]="inputRangeValue"></app-score-square-input-range>
+          <input #inputRange type="range" id="score" min="0" max="10" value="{{inputRangeValue}}"
+                 (input)="valueChanged(inputRange.value)"/>
+        </div>
+      </div>
+    </div>
+    <div class="comment">
+          <textarea
+            class="userInput"
+            placeholder="Type your comment here"
+          ></textarea>
+    </div>
+    <app-control-buttons></app-control-buttons>
+  </div>
+</div>
+<app-footer></app-footer>
+</body>
+</html>

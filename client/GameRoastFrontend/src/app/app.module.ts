@@ -14,12 +14,17 @@ import { GamePageComponent } from './pages/game-page/game-page.component';
 import { ScoreSquareComponent } from './components/score-square/score-square.component';
 import { CommentComponent } from './components/comment/comment.component';
 import { ScoreSquareCommentComponent } from './components/score-square-comment/score-square-comment.component';
+import { ScoreGamePageComponent } from './pages/score-game-page/score-game-page.component';
+import { ControlButtonsComponent } from './components/control-buttons/control-buttons.component';
+import { ScoreSquareInputRangeComponent } from './components/score-square-input-range/score-square-input-range.component';
+import {ReactiveFormsModule} from "@angular/forms";
 
 const routes: Routes = [
   { path: 'login', component: LoginPageComponent },
   { path: 'register', component: RegisterPageComponent },
   { path: 'home', component: HomePageComponent },
   { path: 'game', component: GamePageComponent },
+  { path: 'score_the_game', component: ScoreGamePageComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full'}
 ]
 
@@ -37,9 +42,12 @@ const routes: Routes = [
     ScoreSquareComponent,
     CommentComponent,
     ScoreSquareCommentComponent,
+    ScoreGamePageComponent,
+    ControlButtonsComponent,
+    ScoreSquareInputRangeComponent,
   ],
   imports: [
-    BrowserModule, RouterModule.forRoot(routes)
+    BrowserModule, RouterModule.forRoot(routes), ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

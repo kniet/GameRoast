@@ -37,7 +37,10 @@
         <li><a href="#" class="headerPlatform">XSX</a></li>
       </div>
     </ng-container>
-    <li><a href="#">Log in</a></li>
+    <li *ngIf="AppConstants.isAdmin == null; else loggedIn" ><a href="#">Log in</a></li>
+    <ng-template #loggedIn>
+      <li><a href="#">Log out</a></li>
+    </ng-template>
   </div>
 </div>
 

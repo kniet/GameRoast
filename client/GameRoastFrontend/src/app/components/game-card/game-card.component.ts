@@ -17,4 +17,6 @@ export class GameCardComponent {
   getScoreColor(): string {
     return this.scoreColor.interpolateColor(AppConstants.gameScore);
   }
+
+  protected readonly AppConstants = AppConstants;
 }

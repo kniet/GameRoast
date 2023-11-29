@@ -13,4 +13,6 @@ export class ScoreSquareCommentComponent {
   getScoreColor(): string {
     return this.scoreColor.interpolateColor(AppConstants.gameScore);
   }
+
+  protected readonly AppConstants = AppConstants;
 }

@@ -130,6 +130,11 @@ img {
   display: none;
 }
 
+input:focus{
+  outline: none;
+
+}
+
 @media (max-width: 1270px) {
   .header {
     padding: 0 50px;

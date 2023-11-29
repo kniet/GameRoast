@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1f27255-7180-4191-963c-c2b810ffd374" name="Changes" comment="Game page added and constants file added">
+    <list default="true" id="c1f27255-7180-4191-963c-c2b810ffd374" name="Changes" comment="Hex to Rgb algorithm change">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/app-constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/app-constants.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/comment/comment.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/comment/comment.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/game-card/game-card.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/game-card/game-card.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/game-card/game-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/game-card/game-card.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/game-card/game-card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/game-card/game-card.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/score-square-comment/score-square-comment.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/score-square-comment/score-square-comment.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/score-square-comment/score-square-comment.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/score-square-comment/score-square-comment.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/score-square/score-square.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/score-square/score-square.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/score-square/score-square.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/score-square/score-square.component.ts" afterDir="false" />
     </list>
@@ -123,7 +130,10 @@
       <workItem from="1699862898869" duration="5834000" />
       <workItem from="1699872827931" duration="323000" />
       <workItem from="1699946175408" duration="13973000" />
-      <workItem from="1699962743365" duration="244000" />
+      <workItem from="1699962743365" duration="382000" />
+      <workItem from="1700330020789" duration="187000" />
+      <workItem from="1700677537184" duration="10000" />
+      <workItem from="1701240476415" duration="4496000" />
     </task>
     <task id="LOCAL-00001" summary="Login-page added">
       <option name="closed" value="true" />
@@ -205,7 +215,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699962274581</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Hex to Rgb algorithm change">
+      <option name="closed" value="true" />
+      <created>1699963122698</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1699963122698</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +251,7 @@
     <MESSAGE value="Home page added" />
     <MESSAGE value="File reformation" />
     <MESSAGE value="Game page added and constants file added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Game page added and constants file added" />
+    <MESSAGE value="Hex to Rgb algorithm change" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hex to Rgb algorithm change" />
   </component>
 </project>

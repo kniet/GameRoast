@@ -25,14 +25,6 @@
   cursor: pointer;
 }
 
-.submit:hover {
-  background: #dac737;
-}
-
-.cancel:hover {
-  background: rgb(187, 187, 187);
-}
-
 @media (max-width: 1340px) {
 
   .actionButtons button {

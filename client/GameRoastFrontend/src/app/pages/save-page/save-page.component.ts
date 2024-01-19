@@ -6,5 +6,23 @@ import {Component} from '@angular/core';
   styleUrls: ['./save-page.component.css']
 })
 export class SavePageComponent {
+  selectedGenre = "";
+  pcChecked= false;
+  ps5Checked= false;
+  xsxChecked= false;
+  onCarSelectionChange(event: any) {
+    console.log(this.selectedGenre)
+  }
 
+  onPcSelectionChange() {
+    console.log("Pc selected " + this.pcChecked)
+  }
+
+  onPS5SelectionChange() {
+
+  }
+
+  onXSXSelectionChange() {
+
+  }
 }

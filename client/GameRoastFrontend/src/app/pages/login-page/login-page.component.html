@@ -12,9 +12,21 @@
     <div class="logo"><img src="assets/images/logo-icon-full.png" alt="Logo"/></div>
   </div>
   <div class="loginForm">
-    <app-input-form text="Username" type="text"></app-input-form>
-    <app-input-form text="Password" type="password"></app-input-form>
-    <button class="loginButton">Login</button>
+    <mat-form-field>
+      <mat-label>Username</mat-label>
+      <input matInput required [(ngModel)]="username">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Enter your password</mat-label>
+      <input matInput [type]="hide ? 'password' : 'text'" required [(ngModel)]="password">
+      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+    </mat-form-field>
+
+    <button mat-raised-button color="accent">Login</button>
+
     <div class="signUpText">
       <div class="question">Don’t have an account?</div>
       <a routerLink="/register" routerLinkActive="active"

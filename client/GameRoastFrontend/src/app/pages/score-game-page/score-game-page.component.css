@@ -123,10 +123,6 @@ input[type="range"]:focus::-moz-range-thumb {
   width: 100%;
   resize: vertical;
   padding: 15px;
-  border-radius: 15px;
-  border: 0;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.06);
-  height: 150px;
   font-size: 14px;
   max-height: 300px;
 }
@@ -178,6 +174,10 @@ input[type="range"]:focus::-moz-range-thumb {
 
   .userInput {
     font-size: 12px;
+  }
+
+  .userInput mat-label{
+    font-size: 15px;
   }
 }
 
@@ -234,5 +234,9 @@ input[type="range"]:focus::-moz-range-thumb {
 
   .userInput {
     font-size: 11px;
+  }
+
+  .userInput mat-label{
+    font-size: 13px;
   }
 }

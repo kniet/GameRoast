@@ -72,10 +72,13 @@ img {
 .header .headerPlatforms li a,
 .header .headerPlatforms li a:link,
 .header .headerPlatforms li a:visited,
-.header .headerPlatforms li a:active,
-.header .headerPlatforms li a:hover {
+.header .headerPlatforms li a:active {
   color: #FFFFFF;
   text-decoration: none;
+}
+
+.header .headerPlatforms li a:hover {
+  color: #d5d5d5;
 }
 
 .header form {

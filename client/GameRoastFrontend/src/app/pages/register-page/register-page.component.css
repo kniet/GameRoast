@@ -3,13 +3,14 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 60px;
+  margin-top: 120px;
 }
 
 .head {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 25px;
 }
 
 .headText {
@@ -34,25 +35,11 @@ img {
   width: 100%;
 }
 
-.loginButton {
-  border-radius: 25px;
-  background: #FF5088;
-  box-shadow: 0px 4px 4px 0px #CE55A1;
-  height: 50px;
-  border: none;
-  cursor: pointer;
-  margin: 50px 0 20px 0;
-  color: #fff;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
 .goBackText {
   display: flex;
   justify-content: center;
   font-size: 12px;
+  margin-top: 20px;
 }
 
 @media only screen and (max-width: 1280px) {
@@ -62,10 +49,6 @@ img {
 
   .headText {
     font-size: 32px;
-  }
-
-  .loginText {
-    font-size: 16px;
   }
 
   .goBackText {

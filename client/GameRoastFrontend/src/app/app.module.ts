@@ -4,7 +4,6 @@ import {BrowserModule} from '@angular/platform-browser';
 import {AppComponent} from './app.component';
 import {RouterModule, Routes} from "@angular/router";
 import {LoginPageComponent} from './pages/login-page/login-page.component';
-import {InputFormComponent} from './components/input-form/input-form.component';
 import {RegisterPageComponent} from './pages/register-page/register-page.component';
 import {HomePageComponent} from './pages/home-page/home-page.component';
 import {HeaderComponent} from './components/header/header.component';
@@ -17,11 +16,20 @@ import {ScoreSquareCommentComponent} from './components/score-square-comment/sco
 import {ScoreGamePageComponent} from './pages/score-game-page/score-game-page.component';
 import {ControlButtonsComponent} from './components/control-buttons/control-buttons.component';
 import {ScoreSquareInputRangeComponent} from './components/score-square-input-range/score-square-input-range.component';
-import {ReactiveFormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {SavePageComponent} from './pages/save-page/save-page.component';
-import {LabelInputComponent} from './components/label-input/label-input.component';
-import {RadioItemComponent} from './components/radio-item/radio-item.component';
-import {CheckboxLabelComponent} from './components/checkbox-label/checkbox-label.component';
+import {MatSlideToggleModule} from "@angular/material/slide-toggle";
+import {MatInputModule} from "@angular/material/input";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatIconModule} from "@angular/material/icon";
+import {MatButtonModule} from "@angular/material/button";
+import {MatSliderModule} from "@angular/material/slider";
+import {MatDatepickerModule} from "@angular/material/datepicker";
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatNativeDateModule} from '@angular/material/core';
+import {MatSelectModule} from "@angular/material/select";
+import {MatCardModule} from "@angular/material/card";
+import {MatCheckboxModule} from "@angular/material/checkbox";
 
 const routes: Routes = [
   {path: 'login', component: LoginPageComponent},
@@ -37,7 +45,6 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     LoginPageComponent,
-    InputFormComponent,
     RegisterPageComponent,
     HomePageComponent,
     HeaderComponent,
@@ -50,15 +57,14 @@ const routes: Routes = [
     ScoreGamePageComponent,
     ControlButtonsComponent,
     ScoreSquareInputRangeComponent,
-    SavePageComponent,
-    LabelInputComponent,
-    RadioItemComponent,
-    CheckboxLabelComponent,
+    SavePageComponent
   ],
   imports: [
-    BrowserModule, RouterModule.forRoot(routes), ReactiveFormsModule
+    BrowserModule, RouterModule.forRoot(routes), ReactiveFormsModule, MatSlideToggleModule, MatInputModule, BrowserAnimationsModule, FormsModule, MatIconModule, MatButtonModule, MatSliderModule, MatDatepickerModule, MatFormFieldModule, MatNativeDateModule, MatSelectModule, MatCardModule, MatCheckboxModule
   ],
   providers: [],
+  exports: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {

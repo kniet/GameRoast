@@ -27,77 +27,54 @@
 
 .column {
   padding: 0 40px 25px 50px;
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
 }
 
-.labelInput {
+.formField {
   padding: 0 0 25px 0;
+  width: 100%;
+}
+
+.formField mat-label {
+  font-size: 16px;
+}
+
+.formField input {
+  font-size: 14px;
+}
+
+.formField textarea {
+  font-size: 14px;
+}
+
+.formField select {
+  font-size: 14px
+}
+
+.formField select * {
+font-size: 14px
 }
 
 .text {
   font-size: 16px;
 }
 
-.biggerInput {
-  width: 100%;
-  max-height: 200px;
-  height: 100px;
-  border: none;
-  border-radius: 5px;
-  padding: 5px;
-  resize: vertical;
-  font-size: 14px;
-}
-
-.custom-file-input {
-  color: transparent;
-}
-
-.custom-file-input::-webkit-file-upload-button {
-  visibility: hidden;
-}
-
-.custom-file-input::before {
-  content: "Select file";
+input::file-selector-button {
+  margin-top: 20px;
   color: black;
-  display: inline-block;
-  background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
-  border: 1px solid #999;
+  padding: 0.5em;
+  border: thin solid grey;
   border-radius: 3px;
-  padding: 1px 6px;
-  outline: none;
-  white-space: nowrap;
-  -webkit-user-select: none;
-  cursor: pointer;
-  text-shadow: 1px 1px #fff;
-  font-weight: 600;
-  font-size: 13px;
 }
 
-.custom-file-input:hover::before {
-  border-color: black;
-}
-
-.custom-file-input:active {
-  outline: 0;
-}
-
-.custom-file-input:active::before {
-  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
-}
-
-label[for="fileUpload"] {
-  font-size: 14px;
-  padding-right: 5px;
+input::file-selector-button:hover {
+  background-color: #dcdcdc;
 }
 
 .genre {
   padding: 0 0 25px 0;
-}
-
-.radios {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 5px;
 }
 
 /* RESPONSIVE */
@@ -111,16 +88,24 @@ label[for="fileUpload"] {
     font-size: 14px;
   }
 
-  label {
+  .formField mat-label {
+    font-size: 14px;
+  }
+
+  .formField input {
     font-size: 12px;
   }
 
-  label[for="fileUpload"] {
+  .formField textarea {
     font-size: 12px;
   }
 
-  .biggerInput {
-    font-size: 12px;
+  .formField select {
+    font-size: 12px
+  }
+
+  .formField select * {
+    font-size: 12px
   }
 }
 
@@ -144,16 +129,24 @@ label[for="fileUpload"] {
     font-size: 13px;
   }
 
-  label {
+  .formField mat-label {
+    font-size: 13px;
+  }
+
+  .formField input {
     font-size: 11px;
   }
 
-  label[for="fileUpload"] {
+  .formField textarea {
     font-size: 11px;
   }
 
-  .radios {
-    grid-template-columns: repeat(2, 1fr);
+  .formField select {
+    font-size: 11px
+  }
+
+  .formField select * {
+    font-size: 11px
   }
 
   .custom-file-input {
@@ -162,9 +155,5 @@ label[for="fileUpload"] {
 
   .custom-file-input::before {
     font-size: 10px;
-  }
-
-  .biggerInput {
-    font-size: 11px;
   }
 }

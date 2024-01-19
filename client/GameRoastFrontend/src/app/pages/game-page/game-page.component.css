@@ -58,12 +58,8 @@
 
 .scoreButtonNull button {
   width: 126px;
-  height: 54px;
+  height: 64px;
   background: #ffe842;
-}
-
-.scoreButtonNull button:hover {
-  background: #dac737;
 }
 
 .scoreButtonAdmin {
@@ -89,25 +85,13 @@
   margin-bottom: 20px;
 }
 
-.scoreButtonUser button:hover {
-  background: #dac737;
-}
-
 .update {
   margin-right: 6px;
   background: #ffe842;
 }
 
-.update:hover {
-  background: #dac737;
-}
-
 .delete {
   background: #FF31AC;
-}
-
-.delete:hover {
-  background: #c02484;
 }
 
 .gameInfoList {
@@ -158,7 +142,6 @@
 
   .scoreButtonNull button {
     width: 85px;
-    height: 55px;
     font-size: 12px;
   }
 
@@ -211,21 +194,24 @@
   }
 
   .scoreButtonNull button {
-    width: 55px;
-    height: 55px;
+    width: 105px;
+    height: 49px;
     font-size: 10px;
+    line-height: normal;
   }
 
   .scoreButtonAdmin button {
     width: 45px;
     height: 20px;
     font-size: 10px;
+    line-height: normal;
   }
 
   .scoreButtonUser button {
-    width: 55px;
+    width: 80px;
     height: 40px;
     font-size: 10px;
+    line-height: normal;
   }
 
   .gameInfoList {

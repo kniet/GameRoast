@@ -14,37 +14,61 @@
     <div class="title">Add/Update game panel</div>
     <div class="allInputs">
       <div class="column">
-        <app-label-input description="Title" id="title" type="text"></app-label-input>
-        <div class="labelInput">
-          <div class="text">Description</div>
-          <textarea class="biggerInput" type="text"></textarea>
-        </div>
-        <app-label-input description="Release date" id="releaseDate" type="date"></app-label-input>
+        <mat-form-field class="formField">
+          <mat-label>Title</mat-label>
+          <input matInput placeholder="Ex. Eft" required>
+        </mat-form-field>
+
+        <mat-form-field class="formField">
+          <mat-label>Description</mat-label>
+          <textarea matInput placeholder="Ex. This game is about..." required></textarea>
+        </mat-form-field>
+
+        <mat-form-field class="formField">
+          <mat-label>Choose a date</mat-label>
+          <input matInput [matDatepicker]="picker" required>
+          <mat-hint>MM/DD/YYYY</mat-hint>
+          <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
         <div class="text">Game picture</div>
-        <label for="fileUpload">Select a file:</label>
-        <input class="custom-file-input" type="file" id="fileUpload"/>
+        <input class="custom-file-input" type="file" id="fileUpload" accept="image/png, image/jpeg"/>
+
       </div>
       <div class="column">
-        <app-label-input description="Developer" id="developer" type="text"></app-label-input>
+        <mat-form-field class="formField">
+          <mat-label>Developer</mat-label>
+          <input matInput placeholder="Ex. Bandicam" required>
+        </mat-form-field>
+
         <div class="genre">
-          <div class="text">Genre</div>
-          <div class="radios">
-            <app-radio-item id="action" description="Action"></app-radio-item>
-            <app-radio-item id="rpg" description="RPG"></app-radio-item>
-            <app-radio-item id="sports" description="Sports"></app-radio-item>
-            <app-radio-item id="adventure" description="Adventure"></app-radio-item>
-            <app-radio-item id="simulation" description="Simulation"></app-radio-item>
-            <app-radio-item id="mmo" description="MMO"></app-radio-item>
-            <app-radio-item id="puzzle" description="Puzzle"></app-radio-item>
-            <app-radio-item id="strategy" description="Strategy"></app-radio-item>
-            <app-radio-item id="fps" description="FPS"></app-radio-item>
-          </div>
+          <mat-form-field class="formField">
+            <mat-label>Genre</mat-label>
+            <select matNativeControl required [(ngModel)]="selectedGenre" (change)="onCarSelectionChange($event)">
+              <option value="Action">Action</option>
+              <option value="RPG">RPG</option>
+              <option value="Sports">Sports</option>
+              <option value="Adventure">Adventure</option>
+              <option value="Simulation">Simulation</option>
+              <option value="MMO">MMO</option>
+              <option value="Puzzle">Puzzle</option>
+              <option value="Strategy">Strategy</option>
+              <option value="FPS">FPS</option>
+            </select>
+          </mat-form-field>
+
         </div>
         <div class="checks">
+
           <div class="text">Platform</div>
-          <app-checkbox-label id="pc" description="PC"></app-checkbox-label>
-          <app-checkbox-label id="ps5" description="PS5"></app-checkbox-label>
-          <app-checkbox-label id="xsx" description="XSX"></app-checkbox-label>
+          <mat-card-content>
+            <section class="formField">
+              <mat-checkbox [(ngModel)]="pcChecked" (change)="onPcSelectionChange()">PC</mat-checkbox>
+              <mat-checkbox [(ngModel)]="ps5Checked" (change)="onPS5SelectionChange()">PS5</mat-checkbox>
+              <mat-checkbox [(ngModel)]="xsxChecked" (change)="onXSXSelectionChange()">XSX</mat-checkbox>
+            </section>
+          </mat-card-content>
         </div>
       </div>
     </div>

@@ -27,10 +27,13 @@
 .platforms a,
 .platforms a:link,
 .platforms a:visited,
-.platforms a:active,
-.platforms a:hover {
+.platforms a:active {
   color: #FFFFFF;
   text-decoration: none;
+}
+
+.platforms a:hover {
+  color: #d5d5d5;
 }
 
 .platforms {

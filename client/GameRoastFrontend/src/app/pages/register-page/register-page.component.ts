@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./register-page.component.css']
 })
 export class RegisterPageComponent {
+  username:string;
+  password:string;
+  repeatPassword:string
+  hide = true;
+  hideRepeat = true;
 
 }

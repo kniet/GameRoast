@@ -32,18 +32,18 @@
           <app-score-square></app-score-square>
           <ng-container>
             <div *ngIf="AppConstants.isAdmin == null" class="scoreButtonNull">
-              <button mat-button>Log in to score this game!</button>
+              <button routerLink="/login" routerLinkActive="active" mat-button>Log in to score this game!</button>
             </div>
           </ng-container>
           <ng-container>
             <div *ngIf="AppConstants.isAdmin == true" class="scoreButtonAdmin">
-              <button mat-button class="update">Update</button>
-              <button mat-button class="delete">Delete</button>
+              <button routerLink="/save_the_game" routerLinkActive="active" mat-button class="update">Update</button>
+              <button routerLink="/home" routerLinkActive="active" mat-button class="delete">Delete</button>
             </div>
           </ng-container>
           <ng-container>
             <div *ngIf="AppConstants.isAdmin == false" class="scoreButtonUser">
-              <button mat-button>Score the game</button>
+              <button routerLink="/score_the_game" routerLinkActive="active" mat-button>Score the game</button>
             </div>
           </ng-container>
         </div>
@@ -61,7 +61,7 @@
       <div class="userReviewsHeader">User reviews</div>
       <ng-container>
         <div *ngIf="AppConstants.isAdmin == false" class="scoreButtonUser">
-          <button mat-button>Score the game</button>
+          <button routerLink="/score_the_game" routerLinkActive="active" mat-button>Score the game</button>
         </div>
       </ng-container>
       <app-comment></app-comment>

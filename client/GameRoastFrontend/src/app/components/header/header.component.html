@@ -15,7 +15,7 @@
   <div #cancel class="cancel-icon">
     <span class="fas fa-times"></span>
   </div>
-  <form #form action="#">
+  <form #form action="/home">
     <input
       type="search"
       class="search-data"
@@ -29,19 +29,19 @@
   <div #items class="header-items">
     <ng-container>
       <div *ngIf="AppConstants.isAdmin == true" class="headerPlatforms">
-        <li><a href="#" class="headerPlatform">Add game</a></li>
+        <li><a routerLink="/save_the_game" routerLinkActive="active" class="headerPlatform">Add game</a></li>
       </div>
     </ng-container>
     <ng-container>
       <div *ngIf="AppConstants.isAdmin == false" class="headerPlatforms">
-        <li><a href="#" class="headerPlatform">PS5</a></li>
-        <li><a href="#" class="headerPlatform">PC</a></li>
-        <li><a href="#" class="headerPlatform">XSX</a></li>
+        <li><a routerLink="/home" routerLinkActive="active" class="headerPlatform">PS5</a></li>
+        <li><a routerLink="/home" routerLinkActive="active" class="headerPlatform">PC</a></li>
+        <li><a routerLink="/home" routerLinkActive="active" class="headerPlatform">XSX</a></li>
       </div>
     </ng-container>
-    <li *ngIf="AppConstants.isAdmin == null; else loggedIn"><a href="#">Log in</a></li>
+    <li *ngIf="AppConstants.isAdmin == null; else loggedIn"><a routerLink="/login" routerLinkActive="active">Log in</a></li>
     <ng-template #loggedIn>
-      <li><a href="#">Log out</a></li>
+      <li><a routerLink="/login" routerLinkActive="active">Log out</a></li>
     </ng-template>
   </div>
 </div>

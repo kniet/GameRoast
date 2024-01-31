@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1f27255-7180-4191-963c-c2b810ffd374" name="Changes" comment="Spring boot added to the project">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/GameRoastBackend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/server/GameRoastBackend/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/GameRoastBackend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/GameRoastBackend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/GameRoastApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/GameRoastApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/GameRoastBackend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server/GameRoastBackend/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="c1f27255-7180-4191-963c-c2b810ffd374" name="Changes" comment="JWT logic added" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -145,7 +139,7 @@
       <workItem from="1705671067961" duration="801000" />
       <workItem from="1706209382852" duration="212000" />
       <workItem from="1706684895841" duration="983000" />
-      <workItem from="1706709469754" duration="261000" />
+      <workItem from="1706709469754" duration="390000" />
     </task>
     <task id="LOCAL-00001" summary="Login-page added">
       <option name="closed" value="true" />
@@ -291,7 +285,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706685651612</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="JWT logic added">
+      <option name="closed" value="true" />
+      <created>1706709762915</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1706709762916</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,6 +329,7 @@
     <MESSAGE value="Angular Materials applied on input boxes in all components" />
     <MESSAGE value="Basic routing in app added" />
     <MESSAGE value="Spring boot added to the project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring boot added to the project" />
+    <MESSAGE value="JWT logic added" />
+    <option name="LAST_COMMIT_MESSAGE" value="JWT logic added" />
   </component>
 </project>

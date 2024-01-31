@@ -6,6 +6,7 @@
       <excludeFolder url="file://$MODULE_DIR$/client/GameRoastFrontend/dist" />
       <excludeFolder url="file://$MODULE_DIR$/client/GameRoastFrontend/tmp" />
     </content>
+    <orderEntry type="jdk" jdkName="17" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="font-awesome" level="application" />
   </component>

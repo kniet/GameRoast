@@ -4,7 +4,9 @@ import com.github.kniet.gameroast.model.ERole;
 import com.github.kniet.gameroast.model.Role;
 import com.github.kniet.gameroast.model.User;
 import com.github.kniet.gameroast.payload.request.AuthRequest;
-import com.github.kniet.gameroast.payload.response.AuthResponse;
+
+import com.github.kniet.gameroast.payload.response.JwtResponse;
+import com.github.kniet.gameroast.payload.response.MessageResponse;
 import com.github.kniet.gameroast.repository.RoleRepository;
 import com.github.kniet.gameroast.repository.UserRepository;
 import com.github.kniet.gameroast.security.jwt.JwtUtils;
@@ -30,7 +32,6 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("/api/auth")
 public class AuthController {
-
     @Autowired
     AuthenticationManager authenticationManager;
 
@@ -46,44 +47,62 @@ public class AuthController {
     @Autowired
     JwtUtils jwtUtils;
 
-    @GetMapping("/signin")
-    public ResponseEntity<?> authenticate(@Valid @RequestBody AuthRequest authRequest) {
-        Authentication authentication = authenticationManager
-                .authenticate(new UsernamePasswordAuthenticationToken(authRequest.getUsername(), authRequest.getPassword()));
+    @PostMapping("/signin")
+    public ResponseEntity<?> authenticateUser(@Valid @RequestBody AuthRequest loginRequest) {
+
+        Authentication authentication = authenticationManager.authenticate(
+                new UsernamePasswordAuthenticationToken(loginRequest.getUsername(), loginRequest.getPassword()));
 
         SecurityContextHolder.getContext().setAuthentication(authentication);
+        String jwt = jwtUtils.generateJwtToken(authentication);
+
         UserDetailsImpl userDetails = (UserDetailsImpl) authentication.getPrincipal();
-        ResponseCookie responseCookie = jwtUtils.generateJwtCookie(userDetails);
         List<String> roles = userDetails.getAuthorities().stream()
                 .map(item -> item.getAuthority())
                 .collect(Collectors.toList());
-        return ResponseEntity.ok().header(HttpHeaders.SET_COOKIE, responseCookie.toString())
-                .body(new AuthResponse(userDetails.getId(),
-                                            userDetails.getUsername(),
-                                            roles));
+
+        return ResponseEntity.ok(new JwtResponse(jwt,
+                userDetails.getId(),
+                userDetails.getUsername(),
+                roles));
     }
 
     @PostMapping("/signup")
-    public ResponseEntity<?> register(@Valid @RequestBody AuthRequest authRequest) {
-
-        if (userRepository.existsByUsername(authRequest.getUsername())) {
-            return ResponseEntity.badRequest().body("Error: Username is already taken!");
+    public ResponseEntity<?> registerUser(@Valid @RequestBody AuthRequest signUpRequest) {
+        if (userRepository.existsByUsername(signUpRequest.getUsername())) {
+            return ResponseEntity
+                    .badRequest()
+                    .body(new MessageResponse("Error: Username is already taken!"));
         }
 
-        User user = new User(authRequest.getUsername(), encoder.encode(authRequest.getPassword()));
+        // Create new user's account
+        User user = new User(signUpRequest.getUsername(),
+                encoder.encode(signUpRequest.getPassword()));
+
+        Set<String> strRoles = signUpRequest.getRole();
         Set<Role> roles = new HashSet<>();
-        Role userRole = roleRepository.findByName(ERole.ROLE_USER)
-                .orElseThrow();
-        roles.add(userRole);
+
+        if (strRoles == null) {
+            Role userRole = roleRepository.findByName(ERole.ROLE_USER)
+                    .orElseThrow(() -> new RuntimeException("Error: Role is not found."));
+            roles.add(userRole);
+        } else {
+            strRoles.forEach(role -> {
+                if (role.equals("admin")) {
+                    Role adminRole = roleRepository.findByName(ERole.ROLE_ADMIN)
+                            .orElseThrow(() -> new RuntimeException("Error: Role is not found."));
+                    roles.add(adminRole);
+                } else {
+                    Role userRole = roleRepository.findByName(ERole.ROLE_USER)
+                            .orElseThrow(() -> new RuntimeException("Error: Role is not found."));
+                    roles.add(userRole);
+                }
+            });
+        }
+
         user.setRoles(roles);
         userRepository.save(user);
-        return ResponseEntity.ok("User registered successfully!");
-    }
 
-    @PostMapping("/signout")
-    public ResponseEntity<?> logout() {
-        ResponseCookie responseCookie = jwtUtils.getCleanJwtCookie();
-        return ResponseEntity.ok().header(HttpHeaders.SET_COOKIE, responseCookie.toString())
-                .body("User signed out successfully!");
+        return ResponseEntity.ok(new MessageResponse("User registered successfully!"));
     }
 }

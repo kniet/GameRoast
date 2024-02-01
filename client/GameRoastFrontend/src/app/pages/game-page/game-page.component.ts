@@ -7,5 +7,5 @@ import {AppConstants} from "../../app-constants";
   styleUrls: ['./game-page.component.css']
 })
 export class GamePageComponent {
-  protected readonly AppConstants = AppConstants;
+    protected readonly AppConstants = AppConstants;
 }

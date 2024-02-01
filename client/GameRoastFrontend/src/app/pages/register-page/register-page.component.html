@@ -11,35 +11,39 @@
     <div class="headText">Register</div>
     <div class="logo"><img src="../../../assets/images/logo-icon-full.png" alt="Logo"/></div>
   </div>
-  <div class="loginForm">
+
+  <form class="loginForm" (ngSubmit)="onSubmit()" [formGroup]="registerForm" novalidate>
     <mat-form-field>
       <mat-label>Username</mat-label>
-      <input matInput required [(ngModel)]="username">
+      <input matInput formControlName="username">
+      <mat-error>At least 3 characters</mat-error>
     </mat-form-field>
 
     <mat-form-field>
       <mat-label>Enter your password</mat-label>
-      <input matInput [type]="hide ? 'password' : 'text'" required [(ngModel)]="password">
+      <input matInput [type]="hide ? 'password' : 'text'" formControlName="password">
       <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
         <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
       </button>
+      <mat-error>At least 6 characters</mat-error>
     </mat-form-field>
 
     <mat-form-field>
       <mat-label>Confirm password</mat-label>
-      <input matInput [type]="hideRepeat ? 'password' : 'text'" required [(ngModel)]="repeatPassword">
+      <input matInput [type]="hideRepeat ? 'password' : 'text'" formControlName="confirmPassword">
       <button mat-icon-button matSuffix (click)="hideRepeat = !hideRepeat" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hideRepeat">
         <mat-icon>{{hideRepeat ? 'visibility_off' : 'visibility'}}</mat-icon>
       </button>
+      <mat-hint class="error" *ngIf="registerForm.errors?.['passwordmatchererror']">Password does not match</mat-hint>
     </mat-form-field>
 
-    <button mat-raised-button color="accent">Register</button>
+    <button mat-raised-button color="accent" [disabled]="registerForm.invalid">Register</button>
 
     <div class="goBackText">
       <a routerLink="/login" routerLinkActive="active"
          class="goBack" href="">Go back</a>
     </div>
-  </div>
+  </form>
 </div>
 </body>
 </html>

@@ -20,7 +20,7 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {SavePageComponent} from './pages/save-page/save-page.component';
 import {MatSlideToggleModule} from "@angular/material/slide-toggle";
 import {MatInputModule} from "@angular/material/input";
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
 import {MatSliderModule} from "@angular/material/slider";
@@ -30,15 +30,23 @@ import {MatNativeDateModule} from '@angular/material/core';
 import {MatSelectModule} from "@angular/material/select";
 import {MatCardModule} from "@angular/material/card";
 import {MatCheckboxModule} from "@angular/material/checkbox";
+import {HttpRequestInterceptor} from "./helpers/http-request-interceptor-.service";
+import {HTTP_INTERCEPTORS, HttpClientModule, provideHttpClient} from "@angular/common/http";
+import {BoardAdminComponent} from "./pages/boardADMIN/board-admin/board-admin.component";
+import {BoardUserComponent} from "./pages/boardUSER/board-user/board-user.component";
+import {authGuardGuard} from "./helpers/auth-guard.guard";
 
 const routes: Routes = [
-  {path: 'login', component: LoginPageComponent},
+  {path: 'login', component: LoginPageComponent,},
   {path: 'register', component: RegisterPageComponent},
   {path: 'home', component: HomePageComponent},
   {path: 'game', component: GamePageComponent},
   {path: 'score_the_game', component: ScoreGamePageComponent},
-  {path: 'save_the_game', component: SavePageComponent},
-  {path: '', redirectTo: '/home', pathMatch: 'full'}
+  {path: 'save_the_game', component: SavePageComponent, canActivate: [authGuardGuard]},
+  {path: '', redirectTo: '/home', pathMatch: 'full'},
+  {path: 'admin', component: BoardAdminComponent},
+  {path: 'user', component: BoardUserComponent},
+
 ]
 
 @NgModule({
@@ -60,11 +68,26 @@ const routes: Routes = [
     SavePageComponent
   ],
   imports: [
-    BrowserModule, RouterModule.forRoot(routes), ReactiveFormsModule, MatSlideToggleModule, MatInputModule, BrowserAnimationsModule, FormsModule, MatIconModule, MatButtonModule, MatSliderModule, MatDatepickerModule, MatFormFieldModule, MatNativeDateModule, MatSelectModule, MatCardModule, MatCheckboxModule
+    BrowserModule,
+    RouterModule.forRoot(routes),
+    ReactiveFormsModule,
+    MatSlideToggleModule,
+    MatInputModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    MatIconModule,
+    MatButtonModule,
+    MatSliderModule,
+    MatDatepickerModule,
+    MatFormFieldModule,
+    MatNativeDateModule,
+    MatSelectModule,
+    MatCardModule,
+    MatCheckboxModule,
+    HttpClientModule
   ],
-  providers: [],
-  exports: [
-  ],
+  providers: [{provide: HTTP_INTERCEPTORS, useClass: HttpRequestInterceptor, multi: true}],
+  exports: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {

@@ -1,23 +1,20 @@
 import {Component, OnInit} from '@angular/core';
-import {UserService} from "../../services/user.service";
+import {UserService} from "../../../services/user.service";
 
 @Component({
-  selector: 'app-save-page',
-  templateUrl: './save-page.component.html',
-  styleUrls: ['./save-page.component.css']
+  selector: 'app-board-user',
+  standalone: true,
+  imports: [],
+  templateUrl: './board-user.component.html',
+  styleUrl: './board-user.component.css'
 })
-export class SavePageComponent implements OnInit {
-  selectedGenre = "";
-  pcChecked= false;
-  ps5Checked= false;
-  xsxChecked= false;
-
+export class BoardUserComponent implements OnInit {
   content?: string;
 
   constructor(private userService: UserService) { }
 
   ngOnInit(): void {
-    this.userService.getAdminBoard().subscribe({
+    this.userService.getUserBoard().subscribe({
       next: data => {
         this.content = data;
       },
@@ -34,21 +31,5 @@ export class SavePageComponent implements OnInit {
         }
       }
     });
-  }
-
-  onCarSelectionChange(event: any) {
-    console.log(this.selectedGenre)
-  }
-
-  onPcSelectionChange() {
-    console.log("Pc selected " + this.pcChecked)
-  }
-
-  onPS5SelectionChange() {
-
-  }
-
-  onXSXSelectionChange() {
-
   }
 }

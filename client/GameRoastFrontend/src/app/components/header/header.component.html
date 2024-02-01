@@ -41,7 +41,7 @@
     </ng-container>
     <li *ngIf="AppConstants.isAdmin == null; else loggedIn"><a routerLink="/login" routerLinkActive="active">Log in</a></li>
     <ng-template #loggedIn>
-      <li><a routerLink="/login" routerLinkActive="active">Log out</a></li>
+      <li><a routerLink="/login" routerLinkActive="active" (click)="logout()">Log out</a></li>
     </ng-template>
   </div>
 </div>

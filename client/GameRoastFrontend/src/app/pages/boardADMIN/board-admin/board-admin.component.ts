@@ -1,17 +1,14 @@
 import {Component, OnInit} from '@angular/core';
-import {UserService} from "../../services/user.service";
+import {UserService} from "../../../services/user.service";
 
 @Component({
-  selector: 'app-save-page',
-  templateUrl: './save-page.component.html',
-  styleUrls: ['./save-page.component.css']
+  selector: 'app-board-admin',
+  standalone: true,
+  imports: [],
+  templateUrl: './board-admin.component.html',
+  styleUrl: './board-admin.component.css'
 })
-export class SavePageComponent implements OnInit {
-  selectedGenre = "";
-  pcChecked= false;
-  ps5Checked= false;
-  xsxChecked= false;
-
+export class BoardAdminComponent implements OnInit {
   content?: string;
 
   constructor(private userService: UserService) { }
@@ -34,21 +31,5 @@ export class SavePageComponent implements OnInit {
         }
       }
     });
-  }
-
-  onCarSelectionChange(event: any) {
-    console.log(this.selectedGenre)
-  }
-
-  onPcSelectionChange() {
-    console.log("Pc selected " + this.pcChecked)
-  }
-
-  onPS5SelectionChange() {
-
-  }
-
-  onXSXSelectionChange() {
-
   }
 }

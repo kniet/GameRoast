@@ -42,6 +42,10 @@ img {
   margin-top: 20px;
 }
 
+.error {
+  color: #f44336;
+}
+
 @media only screen and (max-width: 1280px) {
   .container {
     margin-top: 30px;

@@ -1,5 +1,6 @@
 import {Component, ElementRef, ViewChild} from '@angular/core';
 import {AppConstants} from "../../app-constants";
+import {AuthService} from "../../services/auth.service";
 
 @Component({
   selector: 'app-header',
@@ -15,6 +16,17 @@ export class HeaderComponent {
   @ViewChild("cancel") cancel!: ElementRef;
   @ViewChild("items") items!: ElementRef;
   @ViewChild("form") form!: ElementRef;
+
+  constructor(private authService: AuthService) {
+
+  }
+
+  logout() {
+    this.authService.logout();
+  }
+
+
+
 
   ngAfterViewInit(): void {
     this.hamburger.nativeElement.addEventListener('click', () => {
@@ -56,4 +68,6 @@ export class HeaderComponent {
     window.onscroll = () => {
     };
   }
+
+  protected readonly AuthService = AuthService;
 }

@@ -6,6 +6,6 @@ export class AppConstants {
 //TODO podpiąć responsy z backendu do angulara (Jak zrobić zabezpieczenie przed wchodzeniem na linki??? np user do admin panelu - zabezpieczyć)
 //TODO testy manualne!!!
 
-  public static isAdmin: boolean | null = false;
+  public static isAdmin: boolean | null = null;
   public static gameScore: number = 10;
 }

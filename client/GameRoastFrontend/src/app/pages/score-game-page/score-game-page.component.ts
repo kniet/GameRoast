@@ -1,11 +1,11 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-score-game-page',
   templateUrl: './score-game-page.component.html',
   styleUrls: ['./score-game-page.component.css']
 })
-export class ScoreGamePageComponent {
+export class ScoreGamePageComponent implements OnInit {
   inputRangeValue: string
 
   ngOnInit() {

@@ -1,40 +1,19 @@
-import {Component, OnInit} from '@angular/core';
-import {UserService} from "../../services/user.service";
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-save-page',
   templateUrl: './save-page.component.html',
   styleUrls: ['./save-page.component.css']
 })
-export class SavePageComponent implements OnInit {
+export class SavePageComponent {
   selectedGenre = "";
-  pcChecked= false;
-  ps5Checked= false;
-  xsxChecked= false;
+  pcChecked = false;
+  ps5Checked = false;
+  xsxChecked = false;
 
-  content?: string;
-
-  constructor(private userService: UserService) { }
-
-  ngOnInit(): void {
-    this.userService.getAdminBoard().subscribe({
-      next: data => {
-        this.content = data;
-      },
-      error: err => {
-        if (err.error) {
-          try {
-            const res = JSON.parse(err.error);
-            this.content = res.message;
-          } catch {
-            this.content = `Error with status: ${err.status} - ${err.statusText}`;
-          }
-        } else {
-          this.content = `Error with status: ${err.status}`;
-        }
-      }
-    });
+  constructor() {
   }
+
 
   onCarSelectionChange(event: any) {
     console.log(this.selectedGenre)

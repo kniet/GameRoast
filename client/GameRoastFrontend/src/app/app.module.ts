@@ -30,23 +30,18 @@ import {MatNativeDateModule} from '@angular/material/core';
 import {MatSelectModule} from "@angular/material/select";
 import {MatCardModule} from "@angular/material/card";
 import {MatCheckboxModule} from "@angular/material/checkbox";
-import {HttpRequestInterceptor} from "./helpers/http-request-interceptor-.service";
-import {HTTP_INTERCEPTORS, HttpClientModule, provideHttpClient} from "@angular/common/http";
-import {BoardAdminComponent} from "./pages/boardADMIN/board-admin/board-admin.component";
-import {BoardUserComponent} from "./pages/boardUSER/board-user/board-user.component";
-import {authGuardGuard} from "./helpers/auth-guard.guard";
+import {HttpRequestInterceptor} from "./helpers/http-request-interceptor.service";
+import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
+import {authGuard} from "./helpers/auth.guard";
 
 const routes: Routes = [
   {path: 'login', component: LoginPageComponent,},
   {path: 'register', component: RegisterPageComponent},
   {path: 'home', component: HomePageComponent},
   {path: 'game', component: GamePageComponent},
-  {path: 'score_the_game', component: ScoreGamePageComponent},
-  {path: 'save_the_game', component: SavePageComponent, canActivate: [authGuardGuard]},
+  {path: 'score_the_game', component: ScoreGamePageComponent, canActivate: [authGuard]},
+  {path: 'save_the_game', component: SavePageComponent, canActivate: [authGuard]},
   {path: '', redirectTo: '/home', pathMatch: 'full'},
-  {path: 'admin', component: BoardAdminComponent},
-  {path: 'user', component: BoardUserComponent},
-
 ]
 
 @NgModule({

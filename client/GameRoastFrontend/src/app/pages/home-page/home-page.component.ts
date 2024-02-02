@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {UserService} from "../../services/user.service";
 import {StorageService} from "../../services/storage.service";
 import {AppConstants} from "../../app-constants";
 
@@ -13,16 +12,18 @@ export class HomePageComponent implements OnInit {
 
   constructor(private storageService: StorageService) {
   }
+
   ngOnInit(): void {
-    this.currentUser = this.storageService.getUser();
-    if (this.currentUser == null) {
+    try {
+      this.currentUser = this.storageService.getUser();
+      if (this.currentUser.roles == "ROLE_ADMIN") {
+        AppConstants.isAdmin = true;
+      }
+      if (this.currentUser.roles == "ROLE_USER") {
+        AppConstants.isAdmin = false;
+      }
+    } catch (err) {
       AppConstants.isAdmin = null;
-    }
-    if (this.currentUser.roles == "ROLE_ADMIN") {
-      AppConstants.isAdmin = true;
-    }
-    if (this.currentUser.roles == "ROLE_USER") {
-      AppConstants.isAdmin = false;
     }
   }
 

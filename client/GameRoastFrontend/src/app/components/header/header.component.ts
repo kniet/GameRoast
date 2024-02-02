@@ -1,4 +1,4 @@
-import {Component, ElementRef, ViewChild} from '@angular/core';
+import {AfterViewInit, Component, ElementRef, ViewChild} from '@angular/core';
 import {AppConstants} from "../../app-constants";
 import {AuthService} from "../../services/auth.service";
 
@@ -7,7 +7,7 @@ import {AuthService} from "../../services/auth.service";
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent {
+export class HeaderComponent implements  AfterViewInit {
   protected readonly AppConstants = AppConstants;
   private scrollTop: number;
   private scrollLeft: number;
@@ -17,16 +17,11 @@ export class HeaderComponent {
   @ViewChild("items") items!: ElementRef;
   @ViewChild("form") form!: ElementRef;
 
-  constructor(private authService: AuthService) {
-
-  }
+  constructor(private authService: AuthService) {}
 
   logout() {
     this.authService.logout();
   }
-
-
-
 
   ngAfterViewInit(): void {
     this.hamburger.nativeElement.addEventListener('click', () => {

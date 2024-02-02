@@ -1,8 +1,8 @@
-import {CanActivateFn, Router, RouterModule} from '@angular/router';
+import {CanActivateFn, Router} from '@angular/router';
 import {USER_KEY} from "../services/storage.service";
-import {inject, Inject} from "@angular/core";
+import {inject} from "@angular/core";
 
-export const authGuardGuard: CanActivateFn = (route, state) => {
+export const authGuard: CanActivateFn = (route, state) => {
   const router = inject(Router);
   if (!!window.sessionStorage.getItem(USER_KEY)) {
     return true;

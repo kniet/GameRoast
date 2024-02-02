@@ -1,5 +1,5 @@
-import { Injectable } from '@angular/core';
-import {HttpClient, HttpHeaders} from "@angular/common/http";
+import {Injectable} from '@angular/core';
+import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {USER_KEY} from "./storage.service";
 
@@ -9,7 +9,8 @@ const AUTH_API = 'http://localhost:8080/api/auth/';
   providedIn: 'root',
 })
 export class AuthService {
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {
+  }
 
   login(username: string | null | undefined, password: string | null | undefined): Observable<any> {
     return this.http.post(

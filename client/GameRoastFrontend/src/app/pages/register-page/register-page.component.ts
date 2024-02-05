@@ -19,7 +19,7 @@ export class RegisterPageComponent {
 
   registerForm = new FormGroup({
       username: new FormControl('', [Validators.required, Validators.minLength(3)]),
-      password: new FormControl('', [Validators.required, Validators.minLength(6)]),
+      password: new FormControl('', [Validators.required, Validators.minLength(3)]),
       confirmPassword: new FormControl('')
     },
     {

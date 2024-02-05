@@ -4,38 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1f27255-7180-4191-963c-c2b810ffd374" name="Changes" comment="JWT backend connection xD">
+    <list default="true" id="c1f27255-7180-4191-963c-c2b810ffd374" name="Changes" comment="Working JWT and code cleaning">
+      <change afterPath="$PROJECT_DIR$/server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/model/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/model/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/model/Genre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/model/Platform.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/app-constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/app-constants.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/header/header.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/helpers/auth-guard.guard.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/helpers/auth-guard.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/helpers/auth.guard.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/helpers/http-request-interceptor-.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/helpers/http-request-interceptor.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/boardADMIN/board-admin/board-admin.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/boardADMIN/board-admin/board-admin.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/boardADMIN/board-admin/board-admin.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/boardADMIN/board-admin/board-admin.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/boardUSER/board-user/board-user.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/boardUSER/board-user/board-user.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/boardUSER/board-user/board-user.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/boardUSER/board-user/board-user.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/helpers/auth.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/helpers/auth.guard.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/home-page/home-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/home-page/home-page.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/login-page/login-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/login-page/login-page.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/login-page/login-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/login-page/login-page.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/register-page/register-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/register-page/register-page.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/save-page/save-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/save-page/save-page.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/score-game-page/score-game-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/score-game-page/score-game-page.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/services/auth.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/services/auth.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/services/score-color.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/services/storage.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/services/storage.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/services/storage.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/services/user.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/services/user.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/payload/response/JwtResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/payload/response/JwtResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/security/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/security/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/security/jwt/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/security/jwt/JwtUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/services/user.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/controller/TEST.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +85,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;database.data.views.appearance&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\kniet\\Desktop\\Nauka\\IntelliJProjects\\GameRoast\\client\\GameRoastFrontend\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -180,7 +164,9 @@
       <workItem from="1706775645196" duration="19378000" />
       <workItem from="1706796877172" duration="2045000" />
       <workItem from="1706815772272" duration="6713000" />
-      <workItem from="1706856354327" duration="2103000" />
+      <workItem from="1706856354327" duration="3763000" />
+      <workItem from="1706862023073" duration="187000" />
+      <workItem from="1707117984807" duration="5059000" />
     </task>
     <task id="LOCAL-00001" summary="Login-page added">
       <option name="closed" value="true" />
@@ -358,7 +344,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706822297953</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Working JWT and code cleaning">
+      <option name="closed" value="true" />
+      <created>1706858624701</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1706858624701</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -398,6 +392,11 @@
     <MESSAGE value="gitignore update" />
     <MESSAGE value="Update to angular 17" />
     <MESSAGE value="JWT backend connection xD" />
-    <option name="LAST_COMMIT_MESSAGE" value="JWT backend connection xD" />
+    <MESSAGE value="Working JWT and code cleaning" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working JWT and code cleaning" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

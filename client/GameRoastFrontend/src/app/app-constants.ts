@@ -7,5 +7,5 @@ export class AppConstants {
 //TODO testy manualne!!!
 
   public static isAdmin: boolean | null;
-  public static gameScore: number = 10;
+  public static gameScore: number = 5;
 }

@@ -16,7 +16,7 @@ export class LoginPageComponent implements OnInit {
 
   loginForm = new FormGroup({
     username: new FormControl('', [Validators.required, Validators.minLength(3)]),
-    password: new FormControl('', [Validators.required, Validators.minLength(6)])
+    password: new FormControl('', [Validators.required, Validators.minLength(3)])
   });
 
   constructor(private authService: AuthService, private storageService: StorageService, private router: Router) {

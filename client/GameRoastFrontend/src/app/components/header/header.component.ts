@@ -1,6 +1,7 @@
-import {AfterViewInit, Component, ElementRef, ViewChild} from '@angular/core';
+import {AfterViewInit, ChangeDetectorRef, Component, ElementRef, ViewChild} from '@angular/core';
 import {AppConstants} from "../../app-constants";
 import {AuthService} from "../../services/auth.service";
+import {StorageService} from "../../services/storage.service";
 
 @Component({
   selector: 'app-header',
@@ -11,19 +12,33 @@ export class HeaderComponent implements  AfterViewInit {
   protected readonly AppConstants = AppConstants;
   private scrollTop: number;
   private scrollLeft: number;
+  currentUser: any;
   @ViewChild("search") search!: ElementRef;
   @ViewChild("hamburger") hamburger!: ElementRef;
   @ViewChild("cancel") cancel!: ElementRef;
   @ViewChild("items") items!: ElementRef;
   @ViewChild("form") form!: ElementRef;
 
-  constructor(private authService: AuthService) {}
+  constructor(private authService: AuthService, private storageService: StorageService, private cdref: ChangeDetectorRef) {}
 
   logout() {
     this.authService.logout();
   }
 
   ngAfterViewInit(): void {
+
+    try {
+      this.currentUser = this.storageService.getUser();
+      if (this.currentUser.roles == "ROLE_ADMIN") {
+        AppConstants.isAdmin = true;
+      }
+      if (this.currentUser.roles == "ROLE_USER") {
+        AppConstants.isAdmin = false;
+      }
+    } catch (err) {
+      AppConstants.isAdmin = null;
+    }
+
     this.hamburger.nativeElement.addEventListener('click', () => {
       this.items.nativeElement.classList.add("active");
       this.hamburger.nativeElement.classList.add("hide");
@@ -48,6 +63,8 @@ export class HeaderComponent implements  AfterViewInit {
       this.search.nativeElement.classList.add("hide");
       this.cancel.nativeElement.classList.add("show");
     });
+
+    this.cdref.detectChanges();
   }
 
   private disableScroll(): void {

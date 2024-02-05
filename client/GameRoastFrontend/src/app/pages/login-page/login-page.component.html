@@ -16,6 +16,7 @@
       <mat-form-field>
         <mat-label>Username</mat-label>
         <input matInput formControlName="username">
+        <mat-error>At least 3 characters</mat-error>
       </mat-form-field>
 
       <mat-form-field>
@@ -24,6 +25,7 @@
         <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
           <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
         </button>
+        <mat-error>At least 6 characters</mat-error>
       </mat-form-field>
 
       <button mat-raised-button color="accent">Login</button>

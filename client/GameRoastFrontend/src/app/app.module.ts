@@ -33,6 +33,7 @@ import {MatCheckboxModule} from "@angular/material/checkbox";
 import {HttpRequestInterceptor} from "./helpers/http-request-interceptor.service";
 import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import {authGuard} from "./helpers/auth.guard";
+import {authAdminGuard} from "./helpers/auth-admin.guard";
 
 const routes: Routes = [
   {path: 'login', component: LoginPageComponent,},
@@ -40,7 +41,7 @@ const routes: Routes = [
   {path: 'home', component: HomePageComponent},
   {path: 'game', component: GamePageComponent},
   {path: 'score_the_game', component: ScoreGamePageComponent, canActivate: [authGuard]},
-  {path: 'save_the_game', component: SavePageComponent, canActivate: [authGuard]},
+  {path: 'save_the_game', component: SavePageComponent, canActivate: [authAdminGuard]},
   {path: '', redirectTo: '/home', pathMatch: 'full'},
 ]
 

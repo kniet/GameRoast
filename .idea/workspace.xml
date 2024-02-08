@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1f27255-7180-4191-963c-c2b810ffd374" name="Changes" comment="Working JWT and code cleaning">
-      <change afterPath="$PROJECT_DIR$/server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/model/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/model/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/model/Genre.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/model/Platform.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/app-constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/app-constants.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/header/header.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/helpers/auth.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/helpers/auth.guard.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/home-page/home-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/home-page/home-page.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/login-page/login-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/login-page/login-page.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/login-page/login-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/login-page/login-page.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/register-page/register-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/register-page/register-page.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/services/user.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/controller/TEST.java" beforeDir="false" />
-    </list>
+    <list default="true" id="c1f27255-7180-4191-963c-c2b810ffd374" name="Changes" comment="Entities for backend" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -167,6 +151,7 @@
       <workItem from="1706856354327" duration="3763000" />
       <workItem from="1706862023073" duration="187000" />
       <workItem from="1707117984807" duration="5059000" />
+      <workItem from="1707131310076" duration="591000" />
     </task>
     <task id="LOCAL-00001" summary="Login-page added">
       <option name="closed" value="true" />
@@ -352,7 +337,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706858624701</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Entities for backend">
+      <option name="closed" value="true" />
+      <created>1707131355936</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1707131355936</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -393,7 +386,8 @@
     <MESSAGE value="Update to angular 17" />
     <MESSAGE value="JWT backend connection xD" />
     <MESSAGE value="Working JWT and code cleaning" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working JWT and code cleaning" />
+    <MESSAGE value="Entities for backend" />
+    <option name="LAST_COMMIT_MESSAGE" value="Entities for backend" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

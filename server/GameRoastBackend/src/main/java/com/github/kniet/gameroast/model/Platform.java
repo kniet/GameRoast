@@ -2,6 +2,7 @@ package com.github.kniet.gameroast.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
 
 @Entity
 @Table(name = "platform")
@@ -10,8 +11,9 @@ public class Platform {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(length = 20)
+    @Size(max = 20)
     @NotBlank
+    @Column(name = "name")
     private String name;
 
     public void setId(Long id) {

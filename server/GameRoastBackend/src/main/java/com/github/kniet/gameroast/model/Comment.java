@@ -15,9 +15,11 @@ public class Comment {
 
     @NotBlank
     @Size(max = 255)
+    @Column(name = "opinion")
     private String opinion;
 
     @NotBlank
+    @Column(name = "score")
     private int score;
 
     @NotBlank

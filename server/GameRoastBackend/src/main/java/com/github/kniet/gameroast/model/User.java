@@ -20,10 +20,12 @@ public class User {
 
     @NotBlank
     @Size(max = 20)
+    @Column(name = "username")
     private String username;
 
     @NotBlank
     @Size(max = 120)
+    @Column(name = "password")
     private String password;
 
     @ManyToMany(fetch = FetchType.LAZY)

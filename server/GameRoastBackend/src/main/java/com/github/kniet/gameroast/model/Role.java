@@ -1,6 +1,7 @@
 package com.github.kniet.gameroast.model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Size;
 
 @Entity
 @Table(name = "roles")
@@ -11,7 +12,8 @@ public class Role {
     private Long id;
 
     @Enumerated(EnumType.STRING)
-    @Column(length = 20)
+    @Size(max = 20)
+    @Column(name = "name")
     private ERole name;
 
     public Role() {

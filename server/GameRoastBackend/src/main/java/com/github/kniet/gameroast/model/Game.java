@@ -2,11 +2,10 @@ package com.github.kniet.gameroast.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
-import java.util.Date;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 @Entity
 @Table(name = "game")
@@ -15,36 +14,38 @@ public class Game {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotBlank
+    @NotNull
     @Size(max = 20)
+    @Column(name = "title")
     private String title;
 
-    @NotBlank
+    @NotNull
     @Size(max = 255)
+    @Column(name = "details")
     private String details;
 
-    @NotBlank
+    @NotNull
     @Column(name = "release_date")
     private Date releaseDate;
 
-    @NotBlank
+    @NotNull
     @Column(name = "overall_score")
     private Double overallScore;
 
-    @NotBlank
+    @NotNull
     @Column(name = "file_path")
     private String filePath;
 
-    @NotBlank
+    @NotNull
     @Size(max = 120)
+    @Column(name = "developer")
     private String developer;
 
-    @NotBlank
+    @NotNull
     @Enumerated(EnumType.STRING)
-    @Size(max = 120)
+    @Column(name = "genre")
     private Genre genre;
 
-    @NotBlank
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "game", cascade = CascadeType.ALL)
     private Set<Comment> comments = new HashSet<>();
 
@@ -52,7 +53,7 @@ public class Game {
     @JoinTable(name = "game_platforms",
             joinColumns = @JoinColumn(name = "game_id"),
             inverseJoinColumns = @JoinColumn(name = "platform_id"))
-    private Set<Platform> platforms = new HashSet<>();
+    private List<Platform> platforms = new ArrayList<>();
 
     public void setId(Long id) {
         this.id = id;
@@ -70,12 +71,12 @@ public class Game {
         this.title = title;
     }
 
-    public String getDescription() {
+    public String getDetails() {
         return details;
     }
 
-    public void setDescription(String description) {
-        this.details = description;
+    public void setDetails(String details) {
+        this.details = details;
     }
 
     public Date getReleaseDate() {
@@ -126,11 +127,11 @@ public class Game {
         this.comments = comments;
     }
 
-    public Set<Platform> getPlatforms() {
+    public List<Platform> getPlatforms() {
         return platforms;
     }
 
-    public void setPlatforms(Set<Platform> platforms) {
+    public void setPlatforms(List<Platform> platforms) {
         this.platforms = platforms;
     }
 }

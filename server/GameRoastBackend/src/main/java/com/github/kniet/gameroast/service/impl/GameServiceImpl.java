@@ -10,6 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @Transactional
@@ -29,6 +30,36 @@ public class GameServiceImpl implements GameService {
     }
 
     @Override
+    public ResponseEntity<Game> updateGame(Long id, Game game) {
+        Optional<Game> gameData = gameRepository.findById(id);
+        if (gameData.isPresent()) {
+            return new ResponseEntity<>(gameRepository.save(game), HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    }
+
+    @Override
+    public ResponseEntity<HttpStatus> deleteGame(Long id) {
+        try {
+            gameRepository.deleteById(id);
+            return new ResponseEntity<>(HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @Override
+    public ResponseEntity<Game> getGameById(Long id) {
+        Optional<Game> game = gameRepository.findById(id);
+        if (game.isPresent()) {
+            return new ResponseEntity<>(game.get(), HttpStatus.OK);
+        }
+        return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+    }
+
+
+    @Override
     public ResponseEntity<List<Game>> getAllGames(String title) {
         try {
             List<Game> games;
@@ -37,7 +68,7 @@ public class GameServiceImpl implements GameService {
             } else {
                 games = gameRepository.findByTitle(title);
             }
-            return new ResponseEntity<>(games, HttpStatus.CREATED);
+            return new ResponseEntity<>(games, HttpStatus.OK);
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
@@ -47,7 +78,7 @@ public class GameServiceImpl implements GameService {
     public ResponseEntity<List<Game>> getAllGamesByPlatforms(String platformName) {
         try {
             List<Game> games = gameRepository.findByPlatforms(platformName);
-            return new ResponseEntity<>(games, HttpStatus.CREATED);
+            return new ResponseEntity<>(games, HttpStatus.OK);
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }

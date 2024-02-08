@@ -1,7 +1,6 @@
 package com.github.kniet.gameroast.model;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
@@ -33,8 +32,9 @@ public class Game {
     private Double overallScore;
 
     @NotNull
-    @Column(name = "file_path")
-    private String filePath;
+    @Size(max = 255)
+    @Column(name = "file_name")
+    private String fileName;
 
     @NotNull
     @Size(max = 120)
@@ -95,12 +95,12 @@ public class Game {
         this.overallScore = overallScore;
     }
 
-    public String getFilePath() {
-        return filePath;
+    public String getFileName() {
+        return fileName;
     }
 
-    public void setFilePath(String filePath) {
-        this.filePath = filePath;
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
     }
 
     public String getDeveloper() {

@@ -3,6 +3,7 @@ package com.github.kniet.gameroast.controller;
 import com.github.kniet.gameroast.model.Game;
 import com.github.kniet.gameroast.service.GameService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -22,13 +23,31 @@ public class GameController {
         return gameService.createGame(game);
     }
 
-    @GetMapping("/get_all_games")
+    @PutMapping("/update_game/{id}")
+//    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    public ResponseEntity<Game> updateGame(@PathVariable("id") Long id, @RequestBody Game game) {
+        return gameService.updateGame(id, game);
+    }
+
+    @DeleteMapping("/delete_game/{id}")
+//    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    public ResponseEntity<HttpStatus> deleteGame(@PathVariable("id") Long id) {
+        return gameService.deleteGame(id);
+    }
+
+    @GetMapping("/game/{id}")
+//    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    public ResponseEntity<Game> getGameById(@PathVariable("id") Long id) {
+        return gameService.getGameById(id);
+    }
+
+    @GetMapping("/games")
 //    @PreAuthorize("hasRole('ROLE_ADMIN')")
     public ResponseEntity<List<Game>> getAllGames(@RequestParam(required = false) String title) {
         return gameService.getAllGames(title);
     }
 
-    @GetMapping("/get_all_games_by_platform")
+    @GetMapping("/games_by_platform")
 //    @PreAuthorize("hasRole('ROLE_ADMIN')")
     public ResponseEntity<List<Game>> getAllGamesByPlatforms(@RequestParam String platformName) {
         return gameService.getAllGamesByPlatforms(platformName);

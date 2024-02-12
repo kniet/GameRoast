@@ -8,7 +8,7 @@ public class GameRoastApplication {
 
 //TODO zrobić backend
 //TODO po stronie angulara zrobic tworzenie losowej nazwy pliku
-//TODO podpiąć zaawansowane przekierowania (to już z backendem jbc)
+//TODO po stronie angulara ustawic parametry jsona dla comment
 //TODO podpiąć responsy z backendu do angulara
 //TODO testy manualne!!!
 

@@ -1,7 +1,10 @@
 package com.github.kniet.gameroast.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
 import java.util.Date;
@@ -13,27 +16,28 @@ public class Comment {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotBlank
+    @NotNull
     @Size(max = 255)
     @Column(name = "opinion")
     private String opinion;
 
-    @NotBlank
+    @NotNull
     @Column(name = "score")
     private int score;
 
-    @NotBlank
+    @NotNull
     @Column(name = "opinion_date")
     private Date opinionDate;
 
-    @NotBlank
-    @ManyToOne(cascade = CascadeType.ALL)
+    @NotNull
+    @ManyToOne()
     @JoinColumn(name = "user_id")
     private User user;
 
-    @NotBlank
-    @ManyToOne(cascade = CascadeType.ALL)
+    @NotNull
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "game_id")
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private Game game;
 
     public void setId(Long id) {

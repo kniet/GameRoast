@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="5b8b8e2f-3fdf-4621-af18-fb2ebab69d18" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameRoastFrontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/GameRoastFrontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/GameRoastApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/GameRoastApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/model/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/model/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/model/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/model/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/security/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/security/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/service/impl/GameServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/service/impl/GameServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,9 +17,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2bl2zsgC3ADoHMQXmIIqPOyJTxc" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -28,6 +32,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "C:/Users/kniet/Desktop/Nauka/IntelliJProjects/GameRoast/client",
+    "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "database.data.views.appearance",
     "vue.rearranger.settings.migration": "true"
   }
@@ -41,6 +46,7 @@
       <option name="presentableId" value="Default" />
       <updated>1699256319857</updated>
       <workItem from="1706775611006" duration="3000" />
+      <workItem from="1707762065595" duration="3000" />
     </task>
     <servers />
   </component>

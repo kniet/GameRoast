@@ -4,20 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1f27255-7180-4191-963c-c2b810ffd374" name="Changes" comment="Endpoints for comments">
-      <change afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/models/comment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/models/game.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/models/platform.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/models/role.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/models/user.ts" afterDir="false" />
+    <list default="true" id="c1f27255-7180-4191-963c-c2b810ffd374" name="Changes" comment="Model for json response and routing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/app-constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/app-constants.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/game-card/game-card.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/game-card/game-card.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/game-card/game-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/game-card/game-card.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/game-card/game-card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/game-card/game-card.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/game-page/game-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/game-page/game-page.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/service/impl/GameServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/service/impl/GameServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/home-page/home-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/home-page/home-page.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +167,7 @@
       <workItem from="1707388433140" duration="460000" />
       <workItem from="1707392298550" duration="55000" />
       <workItem from="1707399168990" duration="541000" />
-      <workItem from="1707762094385" duration="3537000" />
+      <workItem from="1707762094385" duration="7000000" />
     </task>
     <task id="LOCAL-00001" summary="Login-page added">
       <option name="closed" value="true" />
@@ -388,7 +377,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707762144049</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Model for json response and routing">
+      <option name="closed" value="true" />
+      <created>1707765993658</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1707765993658</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,7 +403,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="gitignore configuration" />
     <MESSAGE value="RegisterPage added" />
     <MESSAGE value="Header added" />
     <MESSAGE value="Header responsive fix" />
@@ -431,7 +427,8 @@
     <MESSAGE value="Entities for backend" />
     <MESSAGE value="Required endpoints for game entity" />
     <MESSAGE value="Endpoints for comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Endpoints for comments" />
+    <MESSAGE value="Model for json response and routing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Model for json response and routing" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

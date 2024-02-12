@@ -1,8 +1,8 @@
 export class AppConstants {
 
-//TODO zrobić bazke i pokazac ziomalowi Adamowi
 //TODO zrobić backend
-//TODO podpiąć zaawansowane przekierowania (to już z backendem jbc)
+//TODO po stronie angulara zrobic tworzenie losowej nazwy pliku
+//TODO po stronie angulara ustawic parametry jsona dla comment
 //TODO podpiąć responsy z backendu do angulara
 //TODO testy manualne!!!
 

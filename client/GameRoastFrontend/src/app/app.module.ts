@@ -39,7 +39,7 @@ const routes: Routes = [
   {path: 'login', component: LoginPageComponent,},
   {path: 'register', component: RegisterPageComponent},
   {path: 'home', component: HomePageComponent},
-  {path: 'game', component: GamePageComponent},
+  {path: 'game/:gameId', component: GamePageComponent},
   {path: 'score_the_game', component: ScoreGamePageComponent, canActivate: [authGuard]},
   {path: 'save_the_game', component: SavePageComponent, canActivate: [authAdminGuard]},
   {path: '', redirectTo: '/home', pathMatch: 'full'},

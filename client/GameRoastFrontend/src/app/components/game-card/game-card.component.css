@@ -1,14 +1,10 @@
-a {
-  text-decoration: none;
-  cursor: pointer;
-}
-
 .game {
   max-width: 320px;
   background: #eaeaea;
   margin: 30px;
   overflow: hidden;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .image {

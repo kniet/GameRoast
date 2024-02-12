@@ -1,5 +1,5 @@
-<div class="game" [ngStyle]="{'box-shadow': boxShadow}">
-  <a routerLink="/game" routerLinkActive="active">
+<mat-card class="game" [ngStyle]="{'box-shadow': boxShadow}" (click)="redirect()">
+  <mat-card-content>
     <div class="image">
       <img src="assets/gameLogos/game-icon-card.png" alt="Icon"/>
     </div>
@@ -21,6 +21,6 @@
         nisi ut aliquip ex ea commodo consequat.
       </div>
     </div>
-  </a>
-</div>
+  </mat-card-content>
+</mat-card>
 

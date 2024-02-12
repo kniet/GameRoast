@@ -66,7 +66,6 @@ public class GameServiceImpl implements GameService {
         return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
-
     @Override
     public ResponseEntity<List<Game>> getAllGames(String title) {
         try {

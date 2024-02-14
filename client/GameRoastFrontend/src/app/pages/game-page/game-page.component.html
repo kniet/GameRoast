@@ -12,24 +12,13 @@
   <div class="mainBackground">
     <div class="topData">
       <div class="tileAndDescription">
-        <div class="title">Game Title</div>
-        <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget ante rutrum,
-          auctor lectus at, scelerisque felis. Cras dignissim est nec mollis pulvinar.
-          Fusce congue at est ac condimentum. Maecenas vulputate non tortor a pharetra.
-          Praesent pellentesque, ipsum a lacinia tempus, dui eros pharetra odio, fringilla pellentesque tortor tortor et
-          quam.
-          Praesent quis magna vitae dolor placerat mollis. Maecenas sit amet egestas diam. Nullam vestibulum hendrerit
-          odio,
-          in sagittis nulla hendrerit nec. Praesent convallis auctor tempus. Sed sit amet aliquet mi, non fringilla
-          nisi.
-          Sed maximus, dolor suscipit aliquam sodales, sem odio suscipit nisl, sed accumsan lectus urna non ligula.
-          Etiam vel justo a nisl lobortis posuere in vel lacus. Cras porttitor metus dolor. Nullam luctus, mauris vitae
-          lacinia consectetur, arcu tortor rhoncus nisi, vel consequat lorem velit id nibh.
+        <div class="title">{{ game.title }}</div>
+        <div class="description">{{ game.details }}
         </div>
       </div>
       <div class="ratingAndGameType">
         <div class="rating">
-          <app-score-square></app-score-square>
+          <app-score-square [score]=game.overallScore></app-score-square>
           <ng-container>
             <div *ngIf="AppConstants.isAdmin == null" class="scoreButtonNull">
               <button routerLink="/login" routerLinkActive="active" mat-button>Log in to score this game!</button>
@@ -49,10 +38,10 @@
         </div>
         <div class="gameType">
           <ul class="gameInfoList">
-            <li>Developer: BLA BLA</li>
-            <li>Genre(s): BLA BLA</li>
-            <li>Release date: BLA BLA</li>
-            <li>Platforms: PC PS5 XSX</li>
+            <li>Developer: {{ game.developer }}</li>
+            <li>Genre: {{ game.genre }}</li>
+            <li>Release date: {{ date }}</li>
+            <li>Platforms: {{ getPlatformNames() }}</li>
           </ul>
         </div>
       </div>

@@ -8,14 +8,13 @@ import {Game} from "../../models/game";
   styleUrls: ['./home-page.component.css']
 })
 export class HomePageComponent implements OnInit {
+  games: Game[];
   constructor(private gameService: GameService) { }
 
   ngOnInit(): void {
-    this.gameService.getGames().subscribe(
+    this.gameService.getAllGames('').subscribe(
       (data: Game[]) => {
-        console.log(data);
+        this.games = data;
       })
   }
-
-
 }

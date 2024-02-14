@@ -9,14 +9,9 @@
 <app-header></app-header>
 <div class="main">
   <div class="mainBackground">
-    <app-game-card></app-game-card>
-    <app-game-card></app-game-card>
-    <app-game-card></app-game-card>
-    <app-game-card></app-game-card>
-    <app-game-card></app-game-card>
-    <app-game-card></app-game-card>
-    <app-game-card></app-game-card>
-    <app-game-card></app-game-card>
+    <div *ngFor="let game of games">
+      <app-game-card [game] = game></app-game-card>
+    </div>
   </div>
 </div>
 <app-footer></app-footer>

@@ -5,6 +5,7 @@ import com.github.kniet.gameroast.service.CommentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -18,19 +19,18 @@ public class CommentController {
     private CommentService commentService;
 
     @PostMapping("/create_comment")
-//    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @PreAuthorize("hasRole('ROLE_USER')")
     public ResponseEntity<Comment> createComment(@RequestBody Comment comment) {
         return commentService.createComment(comment);
     }
 
     @DeleteMapping("/delete_comment/{id}")
-//    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     public ResponseEntity<HttpStatus> deleteComment(@PathVariable("id") Long id) {
         return commentService.deleteComment(id);
     }
 
     @GetMapping("/comments/{gameId}")
-//    @PreAuthorize("hasRole('ROLE_ADMIN')")
     public ResponseEntity<List<Comment>> getAllComments(@PathVariable("gameId") Long gameId) {
         return commentService.getAllComments(gameId);
     }

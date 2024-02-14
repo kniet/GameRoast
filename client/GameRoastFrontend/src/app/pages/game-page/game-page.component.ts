@@ -1,6 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 import {AppConstants} from "../../app-constants";
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
+import {GameService} from "../../services/game.service";
+import {Game} from "../../models/game";
+import {DatePipe} from "@angular/common";
 
 @Component({
   selector: 'app-game-page',
@@ -10,15 +13,32 @@ import {ActivatedRoute} from "@angular/router";
 export class GamePageComponent implements OnInit {
   protected readonly AppConstants = AppConstants;
   gameId: number;
+  game: Game;
+  date: string | null;
 
-  constructor(private _route: ActivatedRoute) {
+  constructor(private _route: ActivatedRoute, private gameService: GameService,
+              private datepipe: DatePipe, private router: Router) {
+    this.game = new Game();
   }
 
-  ngOnInit(): void {
+  ngOnInit(): any {
     this._route.params.subscribe(params =>
       this.gameId = params['gameId']
     )
 
-    console.log(this.gameId)
+    this.gameService.getGameById(this.gameId)
+      .subscribe({
+        next: (data: Game) => {
+          this.game = data;
+          this.date = this.datepipe.transform(data.releaseDate, 'dd MMMM yyyy');
+        },
+        error: () => {
+          void this.router.navigate(['/home'])
+        }
+      });
+  }
+
+  getPlatformNames(): string {
+    return this.game.platforms?.map(platform => platform.name).join(", ");
   }
 }

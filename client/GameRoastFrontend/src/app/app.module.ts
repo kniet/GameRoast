@@ -34,6 +34,7 @@ import {HttpRequestInterceptor} from "./helpers/http-request-interceptor.service
 import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import {authGuard} from "./helpers/auth.guard";
 import {authAdminGuard} from "./helpers/auth-admin.guard";
+import {DatePipe} from "@angular/common";
 
 const routes: Routes = [
   {path: 'login', component: LoginPageComponent,},
@@ -43,6 +44,8 @@ const routes: Routes = [
   {path: 'score_the_game', component: ScoreGamePageComponent, canActivate: [authGuard]},
   {path: 'save_the_game', component: SavePageComponent, canActivate: [authAdminGuard]},
   {path: '', redirectTo: '/home', pathMatch: 'full'},
+  {path: '**', redirectTo: '/home', pathMatch: 'full'}
+
 ]
 
 @NgModule({
@@ -80,9 +83,10 @@ const routes: Routes = [
     MatSelectModule,
     MatCardModule,
     MatCheckboxModule,
-    HttpClientModule
+    HttpClientModule],
+  providers: [{provide: HTTP_INTERCEPTORS, useClass: HttpRequestInterceptor, multi: true},
+    DatePipe
   ],
-  providers: [{provide: HTTP_INTERCEPTORS, useClass: HttpRequestInterceptor, multi: true}],
   exports: [],
   bootstrap: [AppComponent]
 })

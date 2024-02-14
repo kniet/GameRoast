@@ -1,24 +1,23 @@
 <mat-card class="game" [ngStyle]="{'box-shadow': boxShadow}" (click)="redirect()">
   <mat-card-content>
     <div class="image">
-      <img src="assets/gameLogos/game-icon-card.png" alt="Icon"/>
+      <img src="assets/gameLogos/{{ game.fileName }}" alt="Icon"/>
     </div>
     <div class="information">
-      <div class="title">Counter-Strike 2</div>
+      <div class="title">{{ game.title }}</div>
       <div class="genreReleaseDate">
         <div class="genreDiv">
-          <div class="genre">RPG</div>
+          <div class="genre">{{ game.genre }}</div>
         </div>
-        <div class="releaseDate">18 listopada 1999</div>
+        <div class="releaseDate">{{ date }}</div>
         <div class="scoreBack" [style.background-color]="getScoreColor()">
-          <div class="score">{{AppConstants.gameScore}}</div>
+          <div class="score">{{ game.overallScore }}</div>
         </div>
       </div>
       <div class="description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-        enim ad minim veniam, quis nostrud exercitation ullamco laboris
-        nisi ut aliquip ex ea commodo consequat.
+        {{
+          game.details
+        }}
       </div>
     </div>
   </mat-card-content>

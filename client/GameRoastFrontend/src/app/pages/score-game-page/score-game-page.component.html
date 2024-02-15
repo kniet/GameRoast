@@ -16,13 +16,13 @@
     <div class="scores">
       <div class="overallScore">
         <div class="scoreType">Overall score</div>
-        <app-score-square></app-score-square>
+        <app-score-square [score]=game.overallScore></app-score-square>
       </div>
       <div class="yoursScore">
         <div class="scoreType">Yours score</div>
         <div class="scoreAndRangeInput">
-          <app-score-square-input-range [inputRangeValue]="inputRangeValue"></app-score-square-input-range>
-          <input #inputRange type="range" id="score" min="0" max="10" value="{{inputRangeValue}}"
+          <app-score-square-input-range [inputRangeValue]="score"></app-score-square-input-range>
+          <input #inputRange type="range" id="score" min="0" max="10" value="{{score}}"
                  (input)="valueChanged(inputRange.value)"/>
         </div>
       </div>
@@ -30,10 +30,13 @@
     <div class="comment">
       <mat-form-field class="userInput">
         <mat-label>Leave a comment</mat-label>
-        <textarea matInput placeholder="Ex. This game makes me feel..."></textarea>
+        <textarea matInput [(ngModel)]="opinion" placeholder="Ex. This game makes me feel..."></textarea>
       </mat-form-field>
     </div>
-    <app-control-buttons></app-control-buttons>
+    <div class="actionButtons">
+      <button (click)="backClicked()" mat-button class="cancel">Cancel</button>
+      <button (click)="submitClicked()" mat-button class="submit">Submit</button>
+    </div>
   </div>
 </div>
 <app-footer></app-footer>

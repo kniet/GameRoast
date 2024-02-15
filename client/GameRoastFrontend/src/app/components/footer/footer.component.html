@@ -4,11 +4,11 @@
       <img src="assets/images/logo-icon-transparent.png" alt="Logo"/>
     </div>
     <div class="platforms">
-      <a routerLink="/home" routerLinkActive="active" class="platform">PS5</a>
+      <a (click)="searchByPlatform('PS5')" class="platform">PS5</a>
       <div class="separator"></div>
-      <a routerLink="/home" routerLinkActive="active" class="platform">PC</a>
+      <a (click)="searchByPlatform('PC')" class="platform">PC</a>
       <div class="separator"></div>
-      <a routerLink="/home" routerLinkActive="active" class="platform">XSX</a>
+      <a (click)="searchByPlatform('XSX')" class="platform">XSX</a>
     </div>
     <div class="rights">
       <span class="copyright">&nbsp;&nbsp;&copy; 2023 Jakub Nietupski</span>

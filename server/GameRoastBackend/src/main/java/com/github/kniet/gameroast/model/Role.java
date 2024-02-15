@@ -19,8 +19,8 @@ public class Role {
     public Role() {
     }
 
-    public Role(ERole name) {
-        this.name = name;
+    public Role(String name) {
+        this.name = ERole.valueOf(name);
     }
 
     public void setId(Long id) {

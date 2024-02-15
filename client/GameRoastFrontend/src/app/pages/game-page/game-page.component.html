@@ -32,7 +32,7 @@
           </ng-container>
           <ng-container>
             <div *ngIf="AppConstants.isAdmin == false" class="scoreButtonUser">
-              <button routerLink="/score_the_game" routerLinkActive="active" mat-button>Score the game</button>
+              <button [routerLink]="['/score_the_game', this.game.id]" mat-button>Score the game</button>
             </div>
           </ng-container>
         </div>
@@ -50,10 +50,13 @@
       <div class="userReviewsHeader">User reviews</div>
       <ng-container>
         <div *ngIf="AppConstants.isAdmin == false" class="scoreButtonUser">
-          <button routerLink="/score_the_game" routerLinkActive="active" mat-button>Score the game</button>
+          <button [routerLink]="['/score_the_game', this.game.id]" mat-button>Score the game</button>
         </div>
       </ng-container>
-      <app-comment></app-comment>
+      <div *ngFor="let comment of game.comments">
+        <app-comment [comment]=comment></app-comment>
+      </div>
+
     </div>
   </div>
 </div>

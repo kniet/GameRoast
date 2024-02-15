@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {Location} from "@angular/common";
 
 @Component({
   selector: 'app-save-page',
@@ -11,9 +12,12 @@ export class SavePageComponent {
   ps5Checked = false;
   xsxChecked = false;
 
-  constructor() {
+  constructor(private _location: Location) {
   }
 
+  backClicked() {
+    this._location.back();
+  }
 
   onCarSelectionChange(event: any) {
     console.log(this.selectedGenre)

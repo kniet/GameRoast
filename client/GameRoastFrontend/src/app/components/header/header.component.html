@@ -20,9 +20,11 @@
       type="search"
       class="search-data"
       placeholder="Search"
+      [(ngModel)]="searchTitle"
+      name="searchTitle"
       required
     />
-    <button type="submit">
+    <button type="submit" (click)="searchByTitle()">
       <span class="fas fa-search"></span>
     </button>
   </form>
@@ -34,12 +36,13 @@
     </ng-container>
     <ng-container>
       <div *ngIf="AppConstants.isAdmin == false" class="headerPlatforms">
-        <li><a routerLink="/home" routerLinkActive="active" class="headerPlatform">PS5</a></li>
-        <li><a routerLink="/home" routerLinkActive="active" class="headerPlatform">PC</a></li>
-        <li><a routerLink="/home" routerLinkActive="active" class="headerPlatform">XSX</a></li>
+        <li><a (click)="searchByPlatform('PS5')" class="headerPlatform">PS5</a></li>
+        <li><a (click)="searchByPlatform('PC')" class="headerPlatform">PC</a></li>
+        <li><a (click)="searchByPlatform('XSX')" class="headerPlatform">XSX</a></li>
       </div>
     </ng-container>
-    <li *ngIf="AppConstants.isAdmin == null; else loggedIn"><a routerLink="/login" routerLinkActive="active">Log in</a></li>
+    <li *ngIf="AppConstants.isAdmin == null; else loggedIn"><a routerLink="/login" routerLinkActive="active">Log in</a>
+    </li>
     <ng-template #loggedIn>
       <li><a routerLink="/login" routerLinkActive="active" (click)="logout()">Log out</a></li>
     </ng-template>

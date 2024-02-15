@@ -6,10 +6,11 @@
   height: 100%;
   min-height: 80vh;
   flex-direction: column;
+  background: #f7f7f7;
 }
 
 .mainBackground {
-  background: #fafafa;
+  background: #f7f7f7;
   width: 70%;
 }
 
@@ -77,6 +78,34 @@ input::file-selector-button:hover {
   padding: 0 0 25px 0;
 }
 
+.actionButtons {
+  display: flex;
+  justify-content: right;
+  padding: 0 90px 20px 0;
+}
+
+.submit {
+  margin-left: 20px;
+  border: none;
+  cursor: pointer;
+  width: 108px;
+  height: 37px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #ffe842;
+}
+
+.cancel {
+  width: 108px;
+  height: 37px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #d9d9d9;
+  border: none;
+  cursor: pointer;
+}
+
+
 /* RESPONSIVE */
 
 @media (max-width: 1340px) {
@@ -106,6 +135,12 @@ input::file-selector-button:hover {
 
   .formField select * {
     font-size: 12px
+  }
+
+  .actionButtons button {
+    width: 75px;
+    height: 30px;
+    font-size: 11px;
   }
 }
 
@@ -154,6 +189,15 @@ input::file-selector-button:hover {
   }
 
   .custom-file-input::before {
+    font-size: 10px;
+  }
+
+  .actionButtons {
+    padding: 20px;
+  }
+  .actionButtons button{
+    width: 65px;
+    height: 25px;
     font-size: 10px;
   }
 }

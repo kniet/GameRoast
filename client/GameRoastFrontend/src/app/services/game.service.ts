@@ -20,7 +20,7 @@ export class GameService {
   }
 
   updateGame(gameId: number, game: Game): Observable<Game> {
-    return this.http.put<Game>(GAME_API + `update_game/${gameId}`,
+    return this.http.put<Game>(GAME_API + `/update_game/${gameId}`,
       {game})
   }
 
@@ -33,13 +33,17 @@ export class GameService {
   }
 
 
-  getAllGames(title: string): Observable<Game[]> {
-    return this.http.get<Game[]>(GAME_API + '/games',
-      {params: {title: title}});
+  getAllGames(): Observable<Game[]> {
+    return this.http.get<Game[]>(GAME_API + '/games');
+  }
+
+  getAllGamesByTitle(title: string): Observable<Game[]> {
+    return this.http.get<Game[]>(GAME_API + '/games_by_title',
+      {params: {title: title}})
   }
 
   getAllGamesByPlatforms(platformName: string): Observable<Game[]> {
-    return this.http.get<Game[]>(GAME_API + 'games_by_platform',
+    return this.http.get<Game[]>(GAME_API + '/games_by_platform',
       {params: {platformName: platformName}})
   }
 }

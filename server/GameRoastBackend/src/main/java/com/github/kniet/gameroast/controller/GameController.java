@@ -42,8 +42,13 @@ public class GameController {
     }
 
     @GetMapping("/games")
-    public ResponseEntity<List<Game>> getAllGames(@RequestParam(required = false) String title) {
-        return gameService.getAllGames(title);
+    public ResponseEntity<List<Game>> getAllGames() {
+        return gameService.getAllGames();
+    }
+
+    @GetMapping("/games_by_title")
+    public ResponseEntity<List<Game>> getAllGamesByTitle(String title) {
+        return gameService.getAllGamesByTitle(title);
     }
 
     @GetMapping("/games_by_platform")

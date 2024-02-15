@@ -6,10 +6,11 @@
   height: 100%;
   min-height: 80vh;
   flex-direction: column;
+  background: #f7f7f7;
 }
 
 .mainBackground {
-  background: #fafafa;
+  background: #f7f7f7;
   width: 70%;
 }
 
@@ -127,6 +128,12 @@ input[type="range"]:focus::-moz-range-thumb {
   max-height: 300px;
 }
 
+.actionButtons {
+  display: flex;
+  justify-content: right;
+  padding: 0 90px 20px 0;
+}
+
 .submit {
   margin-left: 20px;
   border: none;
@@ -178,6 +185,12 @@ input[type="range"]:focus::-moz-range-thumb {
 
   .userInput mat-label{
     font-size: 15px;
+  }
+
+  .actionButtons button {
+    width: 75px;
+    height: 30px;
+    font-size: 11px;
   }
 }
 
@@ -238,5 +251,14 @@ input[type="range"]:focus::-moz-range-thumb {
 
   .userInput mat-label{
     font-size: 13px;
+  }
+
+  .actionButtons {
+    padding: 20px;
+  }
+  .actionButtons button{
+    width: 65px;
+    height: 25px;
+    font-size: 10px;
   }
 }

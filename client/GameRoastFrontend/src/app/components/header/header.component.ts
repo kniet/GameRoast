@@ -1,17 +1,19 @@
-import {AfterViewInit, ChangeDetectorRef, Component, ElementRef, ViewChild} from '@angular/core';
+import {AfterViewInit, ChangeDetectorRef, Component, ElementRef, EventEmitter, Output, ViewChild} from '@angular/core';
 import {AppConstants} from "../../app-constants";
 import {AuthService} from "../../services/auth.service";
 import {StorageService} from "../../services/storage.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements  AfterViewInit {
+export class HeaderComponent implements AfterViewInit {
   protected readonly AppConstants = AppConstants;
   private scrollTop: number;
   private scrollLeft: number;
+  searchTitle: string;
   currentUser: any;
   @ViewChild("search") search!: ElementRef;
   @ViewChild("hamburger") hamburger!: ElementRef;
@@ -19,7 +21,17 @@ export class HeaderComponent implements  AfterViewInit {
   @ViewChild("items") items!: ElementRef;
   @ViewChild("form") form!: ElementRef;
 
-  constructor(private authService: AuthService, private storageService: StorageService, private cdref: ChangeDetectorRef) {}
+  constructor(private authService: AuthService, private storageService: StorageService,
+              private cdref: ChangeDetectorRef, private router: Router) {
+  }
+
+  searchByTitle() {
+    void this.router.navigate(['/home_title', this.searchTitle])
+  }
+
+  searchByPlatform(platform: string) {
+    void this.router.navigate(['/home_platform', platform])
+  }
 
   logout() {
     this.authService.logout();
@@ -80,6 +92,4 @@ export class HeaderComponent implements  AfterViewInit {
     window.onscroll = () => {
     };
   }
-
-  protected readonly AuthService = AuthService;
 }

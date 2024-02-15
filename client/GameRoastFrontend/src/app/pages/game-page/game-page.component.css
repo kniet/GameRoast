@@ -5,15 +5,17 @@
   height: 100%;
   min-height: 80vh;
   flex-direction: column;
+  background: #f7f7f7;
 }
 
 .mainBackground {
-  background: #fafafa;
+  background: #f7f7f7;
   width: 80%;
 }
 
 .topData {
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
 }
 
@@ -59,7 +61,7 @@
 .scoreButtonNull button {
   width: 126px;
   height: 64px;
-  background: #ffe842;
+  background: #FFD35B;
 }
 
 .scoreButtonAdmin {
@@ -75,7 +77,7 @@
 .scoreButtonUser button {
   width: 126px;
   height: 40px;
-  background: #ffe842;
+  background: #FFD35B;
   flex-shrink: 0;
   border-radius: 5px;
   cursor: pointer;
@@ -87,7 +89,7 @@
 
 .update {
   margin-right: 6px;
-  background: #ffe842;
+  background: #FFD35B;
 }
 
 .delete {

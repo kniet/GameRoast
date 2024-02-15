@@ -1,11 +1,11 @@
 <div class="comment">
   <div class="restOfComment">
     <div class="xpp">
-      <app-score-square-comment></app-score-square-comment>
-      <div class="nickname">Kuba</div>
+      <app-score-square-comment [gameScore]=comment.score></app-score-square-comment>
+      <div class="nickname">{{ comment.user.username }}</div>
     </div>
     <div class="dateAndX">
-      <div class="date">18.11.2023</div>
+      <div class="date">{{ date }}</div>
       <ng-container>
         <div *ngIf="AppConstants.isAdmin==true" class="X">
           <button>&#10060;</button>
@@ -13,15 +13,5 @@
       </ng-container>
     </div>
   </div>
-  <div class="commentText">Lorem ipsum dolor sit amet, consectetur
-    adipiscing elit. Nulla eget ante rutrum, auctor lectus at,
-    scelerisque felis. Cras dignissim est nec mollis pulvinar.
-    Fusce congue at est ac condimentum. Maecenas vulputate non
-    tortor a pharetra. Praesent pellentesque, ipsum a lacinia tempus
-    , dui eros pharetra odio, fringilla pellentesque tortor tortor e
-    t quam. Praesent quis magna vitae dolor placerat mollis.
-    Maecenas sit amet egestas diam. Nullam vestibulum hendrerit odio,
-    in sagittis nulla hendrerit nec. Praesent convallis auctor
-    tempus. Sed sit amet aliquet mi, non fringilla nisi.
-  </div>
+  <div class="commentText">{{ comment.opinion }}</div>
 </div>

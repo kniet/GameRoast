@@ -31,6 +31,7 @@ export class GamePageComponent implements OnInit {
         next: (data: Game) => {
           this.game = data;
           this.date = this.datepipe.transform(data.releaseDate, 'dd MMMM yyyy');
+          this.game.overallScore = Number(this.game.overallScore.toFixed(1));
         },
         error: () => {
           void this.router.navigate(['/home'])

@@ -14,7 +14,6 @@ import {ScoreSquareComponent} from './components/score-square/score-square.compo
 import {CommentComponent} from './components/comment/comment.component';
 import {ScoreSquareCommentComponent} from './components/score-square-comment/score-square-comment.component';
 import {ScoreGamePageComponent} from './pages/score-game-page/score-game-page.component';
-import {ControlButtonsComponent} from './components/control-buttons/control-buttons.component';
 import {ScoreSquareInputRangeComponent} from './components/score-square-input-range/score-square-input-range.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {SavePageComponent} from './pages/save-page/save-page.component';
@@ -40,8 +39,10 @@ const routes: Routes = [
   {path: 'login', component: LoginPageComponent,},
   {path: 'register', component: RegisterPageComponent},
   {path: 'home', component: HomePageComponent},
+  {path: 'home_title/:title', component: HomePageComponent},
+  {path: 'home_platform/:platform', component: HomePageComponent},
   {path: 'game/:gameId', component: GamePageComponent},
-  {path: 'score_the_game', component: ScoreGamePageComponent, canActivate: [authGuard]},
+  {path: 'score_the_game/:gameId', component: ScoreGamePageComponent, canActivate: [authGuard]},
   {path: 'save_the_game', component: SavePageComponent, canActivate: [authAdminGuard]},
   {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: '**', redirectTo: '/home', pathMatch: 'full'}
@@ -62,7 +63,6 @@ const routes: Routes = [
     CommentComponent,
     ScoreSquareCommentComponent,
     ScoreGamePageComponent,
-    ControlButtonsComponent,
     ScoreSquareInputRangeComponent,
     SavePageComponent
   ],

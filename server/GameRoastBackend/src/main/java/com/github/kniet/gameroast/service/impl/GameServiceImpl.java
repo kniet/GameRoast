@@ -67,14 +67,19 @@ public class GameServiceImpl implements GameService {
     }
 
     @Override
-    public ResponseEntity<List<Game>> getAllGames(String title) {
+    public ResponseEntity<List<Game>> getAllGames() {
         try {
-            List<Game> games;
-            if (title == null) {
-                games = gameRepository.findAll();
-            } else {
-                games = gameRepository.findByTitle(title);
-            }
+            List<Game> games = gameRepository.findAll();
+            return new ResponseEntity<>(games, HttpStatus.OK);
+        } catch (Exception e) {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    @Override
+    public ResponseEntity<List<Game>> getAllGamesByTitle(String title) {
+        try {
+            List<Game> games = gameRepository.findByTitle(title);
             return new ResponseEntity<>(games, HttpStatus.OK);
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);

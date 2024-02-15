@@ -16,7 +16,9 @@ public interface GameService {
 
     ResponseEntity<Game> getGameById(Long id);
 
-    ResponseEntity<List<Game>> getAllGames(String title);
+    ResponseEntity<List<Game>> getAllGames();
+
+    ResponseEntity<List<Game>> getAllGamesByTitle(String title);
 
     ResponseEntity<List<Game>> getAllGamesByPlatforms(String platformName);
 

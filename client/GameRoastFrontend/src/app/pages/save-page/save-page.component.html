@@ -72,7 +72,10 @@
         </div>
       </div>
     </div>
-    <app-control-buttons></app-control-buttons>
+    <div class="actionButtons">
+      <button (click)="backClicked()" mat-button class="cancel">Cancel</button>
+      <button (click)="backClicked()" mat-button class="submit">Submit</button>
+    </div>
   </div>
 </div>
 <app-footer></app-footer>

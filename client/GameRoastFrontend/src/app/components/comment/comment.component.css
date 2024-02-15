@@ -35,6 +35,7 @@
 .nickname {
   font-weight: 600;
   padding-right: 10px;
+  padding-left: 15px;
 }
 
 .date {
@@ -46,6 +47,8 @@
   font-size: 15px;
   font-weight: 400;
   text-align: justify;
+  padding: 0 65px;
+
 }
 
 @media (max-width: 1340px) {
@@ -80,11 +83,10 @@
   .restOfComment {
     display: flex;
     justify-content: space-between;
-    padding: 0px;
   }
 
   .dateAndX {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .X button {
@@ -93,6 +95,7 @@
 
   .nickname {
     font-size: 11px;
+    padding-left: 0px;
   }
 
   .date {
@@ -101,8 +104,17 @@
 
   .commentText {
     font-size: 11px;
+    padding: 0 20px;
   }
 }
 
+@media (max-width: 400px) {
+  .restOfComment {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 
-::ng
+  .dateAndX {
+    margin-bottom: 10px;
+  }
+}

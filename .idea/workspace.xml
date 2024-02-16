@@ -4,12 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1f27255-7180-4191-963c-c2b810ffd374" name="Changes" comment="Style adjustments">
+    <list default="true" id="c1f27255-7180-4191-963c-c2b810ffd374" name="Changes" comment="Delete comment functionality">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/comment/comment.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/comment/comment.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/comment/comment.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/comment/comment.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/app-constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/app-constants.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/models/game.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/models/game.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/models/platform.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/models/platform.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/game-page/game-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/game-page/game-page.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/save-page/save-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/save-page/save-page.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/save-page/save-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/save-page/save-page.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/score-game-page/score-game-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/score-game-page/score-game-page.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/service/impl/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/service/impl/CommentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/GameRoastApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/GameRoastApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/model/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/model/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/model/Genre.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/model/Genre.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +184,7 @@
       <workItem from="1707891872053" duration="12024000" />
       <workItem from="1707910095029" duration="12008000" />
       <workItem from="1707987864442" duration="16780000" />
-      <workItem from="1708073090720" duration="1604000" />
+      <workItem from="1708073090720" duration="8719000" />
     </task>
     <task id="LOCAL-00001" summary="Login-page added">
       <option name="closed" value="true" />
@@ -427,7 +434,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708006734116</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Delete comment functionality">
+      <option name="closed" value="true" />
+      <created>1708075010696</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1708075010696</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -445,7 +460,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Footer added fix" />
     <MESSAGE value="Home page added" />
     <MESSAGE value="File reformation" />
     <MESSAGE value="Game page added and constants file added" />
@@ -470,7 +484,8 @@
     <MESSAGE value="Reading and displaying games from backend" />
     <MESSAGE value="Filters and creating comments functionality added" />
     <MESSAGE value="Style adjustments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Style adjustments" />
+    <MESSAGE value="Delete comment functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete comment functionality" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

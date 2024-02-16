@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {AfterViewInit, ChangeDetectorRef, Component, OnInit} from '@angular/core';
 import {Game} from "../../models/game";
 import {ActivatedRoute, Router} from "@angular/router";
 import {GameService} from "../../services/game.service";
@@ -23,12 +23,13 @@ export class ScoreGamePageComponent implements OnInit {
   constructor(private _route: ActivatedRoute, private gameService: GameService,
               private router: Router, private _location: Location,
               private commentService: CommentService, private storageService: StorageService,
-              private datepipe: DatePipe) {
-    this.game = new Game();
+              private datepipe: DatePipe, private changeDetectorRef: ChangeDetectorRef) {
+    this.game = {} as Game;
     this.comment = new Comment();
   }
 
   ngOnInit() {
+    this.changeDetectorRef.detectChanges();
     this._route.params.subscribe(params =>
       this.gameId = params['gameId']
     );

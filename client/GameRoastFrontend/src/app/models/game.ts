@@ -1,7 +1,7 @@
 import {Comment} from "./comment";
 import {Platform} from "./platform";
 
-export class Game {
+export interface Game {
   id: number;
   title: string;
   details: string;
@@ -13,3 +13,4 @@ export class Game {
   comments: Comment[];
   platforms: Platform[];
 }
+

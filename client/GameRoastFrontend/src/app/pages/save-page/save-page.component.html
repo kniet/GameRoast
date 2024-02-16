@@ -16,36 +16,45 @@
       <div class="column">
         <mat-form-field class="formField">
           <mat-label>Title</mat-label>
-          <input matInput placeholder="Ex. Eft" required>
+          <input matInput [(ngModel)]="title" name="title" ngDefaultControl placeholder="Ex. Eft" required>
         </mat-form-field>
 
         <mat-form-field class="formField">
           <mat-label>Description</mat-label>
-          <textarea matInput placeholder="Ex. This game is about..." required></textarea>
+          <textarea matInput [(ngModel)]="description" name="description" ngDefaultControl
+                    placeholder="Ex. This game is about..." required></textarea>
         </mat-form-field>
 
         <mat-form-field class="formField">
           <mat-label>Choose a date</mat-label>
-          <input matInput [matDatepicker]="picker" required>
+          <input matInput [(ngModel)]="date" name="date" ngDefaultControl [matDatepicker]="picker" required>
           <mat-hint>MM/DD/YYYY</mat-hint>
           <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
           <mat-datepicker #picker></mat-datepicker>
         </mat-form-field>
 
         <div class="text">Game picture</div>
-        <input class="custom-file-input" type="file" id="fileUpload" accept="image/png, image/jpeg"/>
+        <input class="custom-file-input"
+               name="fileName"
+               ngDefaultControl
+               type="file"
+               id="fileUpload"
+               accept="image/png,
+                image/jpeg"
+               (change)="onFileSelected($event)"
+        />
 
       </div>
       <div class="column">
         <mat-form-field class="formField">
           <mat-label>Developer</mat-label>
-          <input matInput placeholder="Ex. Bandicam" required>
+          <input matInput [(ngModel)]="developer" name="developer" ngDefaultControl placeholder="Ex. Bandicam" required>
         </mat-form-field>
 
         <div class="genre">
           <mat-form-field class="formField">
             <mat-label>Genre</mat-label>
-            <select matNativeControl required [(ngModel)]="selectedGenre" (change)="onCarSelectionChange($event)">
+            <select matNativeControl required [(ngModel)]="genre" name="genre" ngDefaultControl>
               <option value="Action">Action</option>
               <option value="RPG">RPG</option>
               <option value="Sports">Sports</option>
@@ -64,9 +73,9 @@
           <div class="text">Platform</div>
           <mat-card-content>
             <section class="formField">
-              <mat-checkbox [(ngModel)]="pcChecked" (change)="onPcSelectionChange()">PC</mat-checkbox>
-              <mat-checkbox [(ngModel)]="ps5Checked" (change)="onPS5SelectionChange()">PS5</mat-checkbox>
-              <mat-checkbox [(ngModel)]="xsxChecked" (change)="onXSXSelectionChange()">XSX</mat-checkbox>
+              <mat-checkbox [(ngModel)]="platforms[0].checked" name="platforms" ngDefaultControl>PC</mat-checkbox>
+              <mat-checkbox [(ngModel)]="platforms[1].checked" name="platforms" ngDefaultControl>PS5</mat-checkbox>
+              <mat-checkbox [(ngModel)]="platforms[2].checked" name="platforms" ngDefaultControl>XSX</mat-checkbox>
             </section>
           </mat-card-content>
         </div>
@@ -74,7 +83,7 @@
     </div>
     <div class="actionButtons">
       <button (click)="backClicked()" mat-button class="cancel">Cancel</button>
-      <button (click)="backClicked()" mat-button class="submit">Submit</button>
+      <button (click)="submitClicked()" mat-button class="submit">Submit</button>
     </div>
   </div>
 </div>

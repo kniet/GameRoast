@@ -42,6 +42,7 @@
                accept="image/png,
                 image/jpeg"
                (change)="onFileSelected($event)"
+               required
         />
 
       </div>
@@ -69,7 +70,6 @@
 
         </div>
         <div class="checks">
-
           <div class="text">Platform</div>
           <mat-card-content>
             <section class="formField">
@@ -83,7 +83,9 @@
     </div>
     <div class="actionButtons">
       <button (click)="backClicked()" mat-button class="cancel">Cancel</button>
-      <button (click)="submitClicked()" mat-button class="submit">Submit</button>
+      <button (click)="submitClicked()" mat-button class="submit"
+              [disabled]="(!title || !description || !date || !fileName || !developer || !genre || checkIfAllChecksChecked())"
+      >Submit</button>
     </div>
   </div>
 </div>

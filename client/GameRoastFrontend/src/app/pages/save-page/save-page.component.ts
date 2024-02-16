@@ -4,6 +4,7 @@ import {Game} from "../../models/game";
 import {Platform} from "../../models/platform";
 import {Comment} from "../../models/comment";
 import {GameService} from "../../services/game.service";
+import {FormControl, FormGroup, ValidatorFn, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-save-page',
@@ -23,7 +24,6 @@ export class SavePageComponent {
     {id: 3, name: 'XSX', checked: false },
   ];
   comments: Comment[];
-
   game: Game;
 
   constructor(private _location: Location, private gameService: GameService) {
@@ -59,4 +59,9 @@ export class SavePageComponent {
   onFileSelected(event: any) {
     this.fileName = event.target.files[0].name;
   }
+
+  checkIfAllChecksChecked() {
+    return !this.platforms.some(checkbox => checkbox.checked);
+  }
 }
+

@@ -4,6 +4,7 @@ import {ActivatedRoute, Data, Router} from "@angular/router";
 import {GameService} from "../../services/game.service";
 import {Game} from "../../models/game";
 import {DatePipe} from "@angular/common";
+import {Comment} from "../../models/comment";
 
 @Component({
   selector: 'app-game-page',

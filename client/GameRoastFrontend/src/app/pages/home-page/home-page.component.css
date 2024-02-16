@@ -18,8 +18,21 @@
   width: 80%;
 }
 
+.message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #182424;
+}
+
 @media (max-width: 600px) {
   .mainBackground {
     width: 65%;
+  }
+
+  .message {
+    font-size: 15px;
   }
 }

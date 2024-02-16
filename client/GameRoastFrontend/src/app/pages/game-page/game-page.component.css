@@ -120,6 +120,16 @@
   padding: 0 0 20px 0;
 }
 
+.message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+  padding-top: 60px;
+  color: #182424;
+}
+
 @media (max-width: 1340px) {
   .topData {
     flex-direction: column;
@@ -170,6 +180,11 @@
 
   .gameScoreRating {
     font-size: 18px;
+  }
+
+  .message {
+    font-size: 20px;
+    padding-top: 25px;
   }
 }
 
@@ -237,5 +252,10 @@
 
   .gameScoreRating {
     font-size: 18px;
+  }
+
+  .message {
+    font-size: 15px;
+    padding-top: 10px;
   }
 }

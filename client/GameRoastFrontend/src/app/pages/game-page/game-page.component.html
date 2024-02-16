@@ -53,6 +53,7 @@
           <button [routerLink]="['/score_the_game', this.game.id]" mat-button>Score the game</button>
         </div>
       </ng-container>
+      <div class="message" *ngIf="game.comments.length == 0">There are no comments yet, you can be the first!</div>
       <div *ngFor="let comment of game.comments">
         <app-comment [comment]=comment></app-comment>
       </div>

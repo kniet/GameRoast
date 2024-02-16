@@ -4,7 +4,7 @@ import {Game} from "../../models/game";
 import {Platform} from "../../models/platform";
 import {Comment} from "../../models/comment";
 import {GameService} from "../../services/game.service";
-import {FormControl, FormGroup, ValidatorFn, Validators} from "@angular/forms";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-save-page',
@@ -26,7 +26,8 @@ export class SavePageComponent {
   comments: Comment[];
   game: Game;
 
-  constructor(private _location: Location, private gameService: GameService) {
+  constructor(private _location: Location, private gameService: GameService,
+              private router: Router) {
     this.game = {} as Game;
   }
 
@@ -40,11 +41,13 @@ export class SavePageComponent {
     this.game.genre = this.genre;
     this.game.comments = this.comments
     this.game.platforms = this.platforms.filter(platform => platform.checked);
+    const router = this.router;
 
     this.gameService.createGame(this.game)
       .subscribe({
         next(data: Game) {
-          console.log(data)
+          console.log(data);
+          void router.navigate(['/home'])
         },
         error(err) {
           console.log(err)

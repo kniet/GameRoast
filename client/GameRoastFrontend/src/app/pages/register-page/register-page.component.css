@@ -46,6 +46,14 @@ img {
   color: #f44336;
 }
 
+.error1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  color: #f44336;
+}
+
 @media only screen and (max-width: 1280px) {
   .container {
     margin-top: 30px;

@@ -11,8 +11,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+import java.io.File;
 import java.util.List;
 import java.util.Optional;
+import java.util.UUID;
 
 @Service
 @Transactional
@@ -27,8 +29,13 @@ public class GameServiceImpl implements GameService {
     @Override
     public ResponseEntity<Game> createGame(Game game) {
         Double defaultValue = 5.0;
+        String fileName = UUID.randomUUID().toString();
+        File oldfile = new File("C:/Users/kniet/Desktop/Nauka/IntelliJProjects/GameRoast/client/GameRoastFrontend/src/assets/gameLogos/game-icon-card.png");
+        File newfile = new File("C:/Users/kniet/Desktop/Nauka/IntelliJProjects/GameRoast/client/GameRoastFrontend/src/assets/gameLogos/" + fileName);
+        oldfile.renameTo(newfile);
         try {
             game.setOverallScore(defaultValue);
+            game.setFileName(newfile.getName());
             Game tempGame = gameRepository.save(game);
             return new ResponseEntity<>(tempGame, HttpStatus.CREATED);
         } catch (Exception e) {

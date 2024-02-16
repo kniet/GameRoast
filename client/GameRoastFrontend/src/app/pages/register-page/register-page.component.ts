@@ -16,7 +16,7 @@ import {Router} from "@angular/router";
 export class RegisterPageComponent {
   hide = true;
   hideRepeat = true;
-
+  errorMessage: string = ''
   registerForm = new FormGroup({
       username: new FormControl('', [Validators.required, Validators.minLength(3)]),
       password: new FormControl('', [Validators.required, Validators.minLength(3)]),
@@ -40,6 +40,7 @@ export class RegisterPageComponent {
       },
       error: err => {
         console.log(err)
+        this.errorMessage = err;
       }
     });
   }

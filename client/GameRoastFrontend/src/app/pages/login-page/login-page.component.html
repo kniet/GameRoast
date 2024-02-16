@@ -11,7 +11,8 @@
     <div class="headText">Login</div>
     <div class="logo"><img src="assets/images/logo-icon-full.png" alt="Logo"/></div>
   </div>
-  <p></p>
+  <p *ngIf="!errorMessage"></p>
+  <p class="error" *ngIf="errorMessage">Failed to log in</p>
   <form class="loginForm" (ngSubmit)="onSubmit()" [formGroup]="loginForm">
       <mat-form-field>
         <mat-label>Username</mat-label>

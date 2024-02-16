@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1f27255-7180-4191-963c-c2b810ffd374" name="Changes" comment="Filters and creating comments functionality added">
+    <list default="true" id="c1f27255-7180-4191-963c-c2b810ffd374" name="Changes" comment="Style adjustments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/comment/comment.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/comment/comment.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/game-page/game-page.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/game-page/game-page.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/services/comment.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/services/comment.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/comment/comment.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/comment/comment.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/comment/comment.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/components/comment/comment.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/score-game-page/score-game-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/GameRoastFrontend/src/app/pages/score-game-page/score-game-page.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/service/impl/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/GameRoastBackend/src/main/java/com/github/kniet/gameroast/service/impl/CommentServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -176,7 +176,8 @@
       <workItem from="1707762094385" duration="7162000" />
       <workItem from="1707891872053" duration="12024000" />
       <workItem from="1707910095029" duration="12008000" />
-      <workItem from="1707987864442" duration="16758000" />
+      <workItem from="1707987864442" duration="16780000" />
+      <workItem from="1708073090720" duration="1604000" />
     </task>
     <task id="LOCAL-00001" summary="Login-page added">
       <option name="closed" value="true" />
@@ -418,7 +419,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708004966183</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Style adjustments">
+      <option name="closed" value="true" />
+      <created>1708006734116</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1708006734116</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -436,7 +445,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Footer added" />
     <MESSAGE value="Footer added fix" />
     <MESSAGE value="Home page added" />
     <MESSAGE value="File reformation" />
@@ -461,7 +469,8 @@
     <MESSAGE value="Game service, and first endpoint call" />
     <MESSAGE value="Reading and displaying games from backend" />
     <MESSAGE value="Filters and creating comments functionality added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Filters and creating comments functionality added" />
+    <MESSAGE value="Style adjustments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Style adjustments" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

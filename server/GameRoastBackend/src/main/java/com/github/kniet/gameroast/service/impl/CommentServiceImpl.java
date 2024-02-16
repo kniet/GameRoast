@@ -52,8 +52,14 @@ public class CommentServiceImpl implements CommentService {
 
     @Override
     public ResponseEntity<HttpStatus> deleteComment(Long id) {
+        Comment tempComment;
         try {
-            commentRepository.deleteById(id);
+            Optional<Comment> comment = commentRepository.findById(id);
+            if (comment.isPresent()) {
+                tempComment = comment.get();
+                commentRepository.deleteById(id);
+                setOverallScoreToGame(determineOverallScore(tempComment.getGame().getId()), tempComment.getGame().getId());
+            }
             return new ResponseEntity<>(HttpStatus.OK);
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);

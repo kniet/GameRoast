@@ -68,6 +68,7 @@ export class ScoreGamePageComponent implements OnInit {
     this.commentService.createComment(this.comment).subscribe({
       next: (data: Comment) => {
         console.log(data)
+        this.backClicked();
       },
       error: (e) => {
         console.log(e)

@@ -21,8 +21,4 @@ export class CommentService {
   deleteComment(commentId: number): Observable<any> {
     return this.http.delete<any>(COMMENT_API + `/delete_comment/${commentId}`);
   }
-
-  getAllComments(gameId: number): Observable<Comment[]> {
-    return this.http.get<Comment[]>(COMMENT_API + `/comments/${gameId}`);
-  }
 }

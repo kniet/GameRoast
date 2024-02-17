@@ -3,9 +3,14 @@ package com.github.kniet.gameroast.service.impl;
 import com.github.kniet.gameroast.model.Comment;
 import com.github.kniet.gameroast.model.Game;
 import com.github.kniet.gameroast.repository.GameRepository;
+import com.github.kniet.gameroast.security.jwt.AuthEntryPointJwt;
 import com.github.kniet.gameroast.service.CommentService;
 import com.github.kniet.gameroast.service.GameService;
 import jakarta.transaction.Transactional;
+import org.apache.commons.io.FileUtils;
+import org.apache.logging.log4j.LogManager;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,6 +25,9 @@ import java.util.UUID;
 @Transactional
 public class GameServiceImpl implements GameService {
 
+    private static final Logger logger = LoggerFactory.getLogger(AuthEntryPointJwt.class);
+
+
     @Autowired
     private GameRepository gameRepository;
 
@@ -29,13 +37,9 @@ public class GameServiceImpl implements GameService {
     @Override
     public ResponseEntity<Game> createGame(Game game) {
         Double defaultValue = 5.0;
-        String fileName = UUID.randomUUID().toString();
-        File oldfile = new File("C:/Users/kniet/Desktop/Nauka/IntelliJProjects/GameRoast/client/GameRoastFrontend/src/assets/gameLogos/game-icon-card.png");
-        File newfile = new File("C:/Users/kniet/Desktop/Nauka/IntelliJProjects/GameRoast/client/GameRoastFrontend/src/assets/gameLogos/" + fileName);
-        oldfile.renameTo(newfile);
         try {
+            generateRandomFileNameAndCopy(game);
             game.setOverallScore(defaultValue);
-            game.setFileName(newfile.getName());
             Game tempGame = gameRepository.save(game);
             return new ResponseEntity<>(tempGame, HttpStatus.CREATED);
         } catch (Exception e) {
@@ -100,6 +104,19 @@ public class GameServiceImpl implements GameService {
             return new ResponseEntity<>(games, HttpStatus.OK);
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    private void generateRandomFileNameAndCopy(Game game) {
+        String fileName = UUID.randomUUID().toString();
+        File oldfile = new File("C:/Users/kniet/Desktop/Nauka/IntelliJProjects/GameRoast/client/GameRoastFrontend/src/assets/gameLogos/" + game.getFileName());
+        File newfile = new File("C:/Users/kniet/Desktop/Nauka/IntelliJProjects/GameRoast/client/GameRoastFrontend/src/assets/gameLogos/" + fileName + ".png");
+        try {
+            FileUtils.copyFile(oldfile, newfile);
+            oldfile.renameTo(newfile);
+            game.setFileName(newfile.getName());
+        } catch (Exception e) {
+            logger.error("Error while generating new name file", e);
         }
     }
 }

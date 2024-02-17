@@ -8,8 +8,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 @RequestMapping("/api/comment")
@@ -28,10 +26,5 @@ public class CommentController {
     @PreAuthorize("hasRole('ROLE_ADMIN')")
     public ResponseEntity<HttpStatus> deleteComment(@PathVariable("id") Long id) {
         return commentService.deleteComment(id);
-    }
-
-    @GetMapping("/comments/{gameId}")
-    public ResponseEntity<List<Comment>> getAllComments(@PathVariable("gameId") Long gameId) {
-        return commentService.getAllComments(gameId);
     }
 }

@@ -15,7 +15,8 @@ export class GameCardComponent implements OnInit {
   date: string | null;
   boxShadow: string;
 
-  constructor(private scoreColor: ScoreColorService, private router: Router, public datepipe: DatePipe) {
+  constructor(private scoreColor: ScoreColorService, private router: Router,
+              public datepipe: DatePipe) {
   }
 
   ngOnInit(): any {

@@ -36,7 +36,7 @@ export class RegisterPageComponent {
     this.authService.register(username, password).subscribe({
       next: data => {
         console.log(data);
-        this.router.navigate(["/login"]);
+        void this.router.navigate(["/login"]);
       },
       error: err => {
         console.log(err)
@@ -54,7 +54,6 @@ export const matchPassword: ValidatorFn = (control: AbstractControl): Validation
       passwordmatchererror: true
     }
   }
-
   return null;
 }
 

@@ -1,6 +1,5 @@
 package com.github.kniet.gameroast.service.impl;
 
-import com.github.kniet.gameroast.model.Comment;
 import com.github.kniet.gameroast.model.Game;
 import com.github.kniet.gameroast.repository.GameRepository;
 import com.github.kniet.gameroast.security.jwt.AuthEntryPointJwt;
@@ -8,7 +7,6 @@ import com.github.kniet.gameroast.service.CommentService;
 import com.github.kniet.gameroast.service.GameService;
 import jakarta.transaction.Transactional;
 import org.apache.commons.io.FileUtils;
-import org.apache.logging.log4j.LogManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

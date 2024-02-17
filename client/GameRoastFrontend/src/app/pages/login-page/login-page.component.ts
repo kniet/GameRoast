@@ -25,7 +25,7 @@ export class LoginPageComponent implements OnInit {
   ngOnInit(): void {
     if (this.storageService.getToken() != null) {
       this.roles = this.storageService.getUser().roles;
-      this.router.navigate(["/home"]);
+      void this.router.navigate(["/home"]);
     }
   }
 
@@ -37,7 +37,7 @@ export class LoginPageComponent implements OnInit {
       next: data => {
         this.storageService.saveUser(data);
         this.roles = this.storageService.getUser().roles;
-        this.router.navigate(["/home"]);
+        void this.router.navigate(["/home"]);
       },
       error: err => {
         console.log(err)

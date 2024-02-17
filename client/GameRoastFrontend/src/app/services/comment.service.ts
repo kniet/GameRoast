@@ -13,7 +13,7 @@ export class CommentService {
   constructor(private http: HttpClient) {
   }
 
-  createComment(comment: Comment){
+  createComment(comment: Comment) {
     return this.http.post<Comment>(COMMENT_API + '/create_comment',
       comment);
   }

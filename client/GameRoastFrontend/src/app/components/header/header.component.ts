@@ -1,4 +1,4 @@
-import {AfterViewInit, ChangeDetectorRef, Component, ElementRef, EventEmitter, Output, ViewChild} from '@angular/core';
+import {AfterViewInit, ChangeDetectorRef, Component, ElementRef, ViewChild} from '@angular/core';
 import {AppConstants} from "../../app-constants";
 import {AuthService} from "../../services/auth.service";
 import {StorageService} from "../../services/storage.service";
@@ -38,7 +38,6 @@ export class HeaderComponent implements AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-
     try {
       this.currentUser = this.storageService.getUser();
       if (this.currentUser.roles == "ROLE_ADMIN") {

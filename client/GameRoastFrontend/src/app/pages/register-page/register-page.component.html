@@ -22,8 +22,9 @@
     <mat-form-field>
       <mat-label>Enter your password</mat-label>
       <input matInput [type]="hide ? 'password' : 'text'" formControlName="password">
-      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
-        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+              [attr.aria-pressed]="hide">
+        <mat-icon>{{ hide ? 'visibility_off' : 'visibility' }}</mat-icon>
       </button>
       <mat-error>At least 6 characters</mat-error>
     </mat-form-field>
@@ -31,8 +32,9 @@
     <mat-form-field>
       <mat-label>Confirm password</mat-label>
       <input matInput [type]="hideRepeat ? 'password' : 'text'" formControlName="confirmPassword">
-      <button mat-icon-button matSuffix (click)="hideRepeat = !hideRepeat" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hideRepeat">
-        <mat-icon>{{hideRepeat ? 'visibility_off' : 'visibility'}}</mat-icon>
+      <button mat-icon-button matSuffix (click)="hideRepeat = !hideRepeat" [attr.aria-label]="'Hide password'"
+              [attr.aria-pressed]="hideRepeat">
+        <mat-icon>{{ hideRepeat ? 'visibility_off' : 'visibility' }}</mat-icon>
       </button>
       <mat-hint class="error" *ngIf="registerForm.errors?.['passwordmatchererror']">Password does not match</mat-hint>
     </mat-form-field>

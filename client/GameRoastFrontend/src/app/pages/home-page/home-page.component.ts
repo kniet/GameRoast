@@ -16,9 +16,13 @@ export class HomePageComponent implements OnInit {
 
   ngOnInit(): void {
     this._route.params.subscribe((params) => {
-      if (params['title']) { this.searchByTitle(params['title']); }
-      else if (params['platform']) { this.searchByPlatform(params['platform']); }
-      else { this.getGames() }
+      if (params['title']) {
+        this.searchByTitle(params['title']);
+      } else if (params['platform']) {
+        this.searchByPlatform(params['platform']);
+      } else {
+        this.getGames()
+      }
     });
   }
 

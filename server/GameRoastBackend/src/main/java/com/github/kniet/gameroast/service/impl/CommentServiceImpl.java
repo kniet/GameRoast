@@ -3,7 +3,6 @@ package com.github.kniet.gameroast.service.impl;
 import com.github.kniet.gameroast.model.Comment;
 import com.github.kniet.gameroast.model.Game;
 import com.github.kniet.gameroast.repository.CommentRepository;
-import com.github.kniet.gameroast.repository.GameRepository;
 import com.github.kniet.gameroast.repository.UserRepository;
 import com.github.kniet.gameroast.service.CommentService;
 import com.github.kniet.gameroast.service.GameService;
@@ -31,7 +30,7 @@ public class CommentServiceImpl implements CommentService {
     private GameService gameService;
 
     @Autowired
-    public CommentServiceImpl(@Lazy GameService gameService){
+    public CommentServiceImpl(@Lazy GameService gameService) {
         this.gameService = gameService;
     }
 

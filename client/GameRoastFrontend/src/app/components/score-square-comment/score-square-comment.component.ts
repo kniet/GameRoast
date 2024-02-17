@@ -1,6 +1,5 @@
 import {Component, Input} from '@angular/core';
 import {ScoreColorService} from "../../services/score-color.service";
-import {AppConstants} from "../../app-constants";
 
 @Component({
   selector: 'app-score-square-comment',
@@ -11,7 +10,8 @@ export class ScoreSquareCommentComponent {
   @Input()
   gameScore: number;
 
-  constructor(private scoreColor: ScoreColorService) {}
+  constructor(private scoreColor: ScoreColorService) {
+  }
 
   getScoreColor(): string {
     return this.scoreColor.interpolateColor(this.gameScore);

@@ -183,7 +183,7 @@ input[type="range"]:focus::-moz-range-thumb {
     font-size: 12px;
   }
 
-  .userInput mat-label{
+  .userInput mat-label {
     font-size: 15px;
   }
 
@@ -249,14 +249,15 @@ input[type="range"]:focus::-moz-range-thumb {
     font-size: 11px;
   }
 
-  .userInput mat-label{
+  .userInput mat-label {
     font-size: 13px;
   }
 
   .actionButtons {
     padding: 20px;
   }
-  .actionButtons button{
+
+  .actionButtons button {
     width: 65px;
     height: 25px;
     font-size: 10px;

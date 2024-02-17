@@ -12,4 +12,5 @@ export const authAdminGuard: CanActivateFn = (route, state) => {
   } else {
     void router.navigate(['/home'])
     return false;
-  }};
+  }
+};

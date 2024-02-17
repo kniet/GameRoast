@@ -11,7 +11,7 @@
   <div class="mainBackground">
     <div class="message" *ngIf="games?.length == 0">No games have been added yet</div>
     <div *ngFor="let game of games">
-      <app-game-card [game] = game></app-game-card>
+      <app-game-card [game]=game></app-game-card>
     </div>
   </div>
 </div>

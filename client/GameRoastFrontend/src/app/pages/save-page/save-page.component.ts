@@ -1,5 +1,5 @@
-import {Component, Input, OnInit} from '@angular/core';
-import {DatePipe, Location} from "@angular/common";
+import {Component, OnInit} from '@angular/core';
+import {Location} from "@angular/common";
 import {Game} from "../../models/game";
 import {Platform} from "../../models/platform";
 import {Comment} from "../../models/comment";

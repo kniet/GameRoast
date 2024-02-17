@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class GameRoastApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(GameRoastApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(GameRoastApplication.class, args);
+    }
 
 }

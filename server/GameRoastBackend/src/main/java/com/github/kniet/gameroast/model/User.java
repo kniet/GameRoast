@@ -10,10 +10,9 @@ import java.util.Set;
 @Entity
 @Table(name = "user",
         uniqueConstraints = {
-            @UniqueConstraint(columnNames = {"username"})
+                @UniqueConstraint(columnNames = {"username"})
         })
 public class User {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

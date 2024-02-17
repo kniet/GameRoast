@@ -1,4 +1,4 @@
-import {AfterViewInit, ChangeDetectorRef, Component, OnInit} from '@angular/core';
+import {ChangeDetectorRef, Component, OnInit} from '@angular/core';
 import {Game} from "../../models/game";
 import {ActivatedRoute, Router} from "@angular/router";
 import {GameService} from "../../services/game.service";
@@ -16,7 +16,6 @@ export class ScoreGamePageComponent implements OnInit {
   score: string
   opinion: string
   game: Game;
-
   gameId: number;
   comment: Comment;
 

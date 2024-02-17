@@ -1,6 +1,4 @@
-import {ChangeDetectorRef, Component, EventEmitter, Output} from '@angular/core';
-import {AuthService} from "../../services/auth.service";
-import {StorageService} from "../../services/storage.service";
+import {Component} from '@angular/core';
 import {Router} from "@angular/router";
 
 @Component({
@@ -14,7 +12,6 @@ export class FooterComponent {
   }
 
   searchByPlatform(platform: string) {
-
     void this.router.navigate(['/home_platform', platform])
     window.scroll({
       top: 0,

@@ -21,7 +21,7 @@ export class GameService {
 
   updateGame(gameId: number, game: Game): Observable<Game> {
     return this.http.put<Game>(GAME_API + `/update_game/${gameId}`,
-      {game})
+      game)
   }
 
   deleteGame(gameId: number): Observable<any> {

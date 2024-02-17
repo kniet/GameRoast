@@ -26,7 +26,7 @@
           </ng-container>
           <ng-container>
             <div *ngIf="AppConstants.isAdmin == true" class="scoreButtonAdmin">
-              <button routerLink="/save_the_game" routerLinkActive="active" mat-button class="update">Update</button>
+              <button [routerLink]="['/save_the_game', this.game.id]" mat-button class="update">Update</button>
               <button routerLink="/home" routerLinkActive="active" mat-button class="delete">Delete</button>
             </div>
           </ng-container>
@@ -53,7 +53,7 @@
           <button [routerLink]="['/score_the_game', this.game.id]" mat-button>Score the game</button>
         </div>
       </ng-container>
-      <div class="message" *ngIf="game.comments.length == 0">There are no comments yet, you can be the first!</div>
+      <div class="message" *ngIf="game.comments?.length == 0">There are no comments yet, you can be the first!</div>
       <div *ngFor="let comment of game.comments">
         <app-comment [comment]=comment></app-comment>
       </div>

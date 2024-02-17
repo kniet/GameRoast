@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
+import java.awt.print.Book;
 import java.util.*;
 
 @Entity
@@ -54,6 +55,10 @@ public class Game {
             joinColumns = @JoinColumn(name = "game_id"),
             inverseJoinColumns = @JoinColumn(name = "platform_id"))
     private List<Platform> platforms = new ArrayList<>();
+
+    public void removePlatform(Platform platform) {
+        this.platforms.remove(platform);
+    }
 
     public void setId(Long id) {
         this.id = id;

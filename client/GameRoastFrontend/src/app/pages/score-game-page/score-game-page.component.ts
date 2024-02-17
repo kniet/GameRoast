@@ -44,7 +44,6 @@ export class ScoreGamePageComponent implements OnInit {
           void this.router.navigate(['/home'])
         }
       });
-
     this.score = "5";
   }
 
@@ -73,7 +72,7 @@ export class ScoreGamePageComponent implements OnInit {
       },
       error: (e) => {
         console.log(e)
-    }
+      }
     });
   }
 }

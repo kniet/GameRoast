@@ -44,6 +44,7 @@ const routes: Routes = [
   {path: 'game/:gameId', component: GamePageComponent},
   {path: 'score_the_game/:gameId', component: ScoreGamePageComponent, canActivate: [authGuard]},
   {path: 'save_the_game', component: SavePageComponent, canActivate: [authAdminGuard]},
+  {path: 'save_the_game/:gameId', component: SavePageComponent, canActivate: [authAdminGuard]},
   {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: '**', redirectTo: '/home', pathMatch: 'full'}
 

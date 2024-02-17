@@ -13,7 +13,6 @@ export class GameService {
   constructor(private http: HttpClient) {
   }
 
-
   createGame(game: Game): Observable<Game> {
     return this.http.post<Game>(GAME_API + '/create_game',
       game);

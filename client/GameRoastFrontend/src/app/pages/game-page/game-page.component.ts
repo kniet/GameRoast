@@ -40,6 +40,18 @@ export class GamePageComponent implements OnInit {
       });
   }
 
+  deleteClicked() {
+    this.gameService.deleteGame(this.gameId)
+      .subscribe({
+        next: () => {
+          void this.router.navigate(['/home'])
+        },
+        error: (err) => {
+          console.log(err)
+        }
+      });
+  }
+
   getPlatformNames(): string {
     return this.game.platforms?.map(platform => platform.name).join(", ");
   }

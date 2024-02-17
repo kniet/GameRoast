@@ -27,7 +27,7 @@
           <ng-container>
             <div *ngIf="AppConstants.isAdmin == true" class="scoreButtonAdmin">
               <button [routerLink]="['/save_the_game', this.game.id]" mat-button class="update">Update</button>
-              <button routerLink="/home" routerLinkActive="active" mat-button class="delete">Delete</button>
+              <button (click)="deleteClicked()" mat-button class="delete">Delete</button>
             </div>
           </ng-container>
           <ng-container>
